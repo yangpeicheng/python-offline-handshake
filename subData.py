@@ -1,8 +1,14 @@
 import csv
 import math
 import numpy as np
-def extract(m,start,end):
-    new = m.split('.')[0] + "t.csv"
+import os
+
+def extract(m):
+    acceleration=readCompleteData(m)
+    start,end=findHandShake(acceleration)
+    s=m.split('\\')
+    s[-2]="handshake"
+    new='\\'.join(s)
     output=open(new,'w',newline="")
     write=csv.writer(output)
     with open(m) as f:
@@ -24,7 +30,7 @@ def init(data):
         if len(window)==window_size:
             magnitude.append(mag)
             variance.append(np.var(window))
-            window.remove(0)
+            window.pop(0)
     return magnitude,variance
 
 def getMagnitude(data):
@@ -49,10 +55,12 @@ def findHandShake(data):
             upIndex.append(i)
         preState=currentState
     i=0
+    print(downIndex)
+    print(upIndex)
     while i<min(len(upIndex),len(downIndex)-1):
-        if downIndex[i+1]-upIndex[i]<5:
-            downIndex.remove(i+1)
-            upIndex.remove(i)
+        if downIndex[i+1]-upIndex[i]<3:
+            downIndex.pop(i+1)
+            upIndex.pop(i)
         else:
             i+=1
     start=downIndex[0]
@@ -63,6 +71,7 @@ def findHandShake(data):
             length=upIndex[j]-downIndex[j]
             end=upIndex[j]
             start=downIndex[j]
+    print(start,end)
     return start,end
 
 def readCompleteData(filename):
@@ -77,7 +86,11 @@ def readCompleteData(filename):
 
 
 if __name__=="__main__":
-    extract("E:\\SensorData\\pcatest\\masterlocal-9.csv")
-    extract("E:\\SensorData\\pcatest\\slavelocal-9.csv")
+    filepath="D:\\SensorData\\temp"
+    files=os.listdir(filepath)
+    for f in files:
+        filename=os.path.join(filepath,f)
+        extract(filename)
+
 
 
