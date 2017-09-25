@@ -86,7 +86,7 @@ def readCompleteData(filename):
 
 
 if __name__=="__main__":
-    filepath="D:\\SensorData\\temp"
+    filepath="E:\\SensorData\\temp"
     files=os.listdir(filepath)
     for f in files:
         filename=os.path.join(filepath,f)

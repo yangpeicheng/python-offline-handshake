@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import csv
+import os
 def updateMatrix(currentMatrix,gyro,dt):
     delta = math.sqrt(dt * dt * (gyro[0] * gyro[0] + gyro[1] * gyro[1] + gyro[2] * gyro[2]))
     B=np.array(
@@ -23,13 +24,30 @@ def handler(m):
     with open(m) as f:
         reader=csv.reader(f)
         for line in reader:
-            time=int(line(15))
-            if last_timestamp>0:
-                gyro=np.array([float(line(i)) for i in range(9,12)])
-                lineacc=np.array([float(line(i)) for i in range(3,6)]).transpose()
+            time=int(line[15])
+            if last_timestamp>0 and time!=last_timestamp:
+                gyro=np.array([float(line[i]) for i in range(9,12)])
+                lineacc=np.array([float(line[i]) for i in range(3,6)]).transpose()
                 dt=(time-last_timestamp)*NS2S
-                updateMatrix(current,gyro,dt)
+                current=updateMatrix(current,gyro,dt)
                 acceleration.append(np.dot(current,lineacc).tolist())
-                matrix.append(current)
+                matrix.append(current.tolist())
             last_timestamp=time
+    s=m.split('\\')
+    s[-2]="transform"
+    newfile='\\'.join(s)
+    with open(newfile,'w',newline="") as f:
+        writer=csv.writer(f)
+        for i in range(len(acceleration)):
+            tmp=[]
+            for j in range(3):
+                tmp=tmp+matrix[i][j]
+            writer.writerow(acceleration[i]+tmp)
     return acceleration,matrix
+
+if __name__=="__main__":
+    filepath="E:\\SensorData\\handshake"
+    files=os.listdir(filepath)
+    for f in files:
+        filename=os.path.join(filepath,f)
+        handler(filename)

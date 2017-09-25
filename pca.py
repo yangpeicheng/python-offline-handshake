@@ -2,13 +2,17 @@ from sklearn.decomposition import PCA
 import csv
 import math
 import numpy as np
-
-def  pcaTrain(data):
+import os
+def  pcaTrain(data,filename):
     pca=PCA(n_components=3)
     pca.fit(data[0:50])
-    print(pca.explained_variance_ratio_)
+    with open("E:\SensorData\pca\\variance_ratio.txt",'a') as f:
+        f.writelines(filename+'\r\n')
+        tmp=[str(pca.explained_variance_ratio_[i]) for i in range(3)]
+        f.writelines(",".join(tmp)+'\r\n')
+    '''print(pca.explained_variance_ratio_)
     print(pca.explained_variance_)
-    print(pca.components_)
+    print(pca.components_)'''
     return pca.components_
 
 def transform(data,components):
@@ -22,8 +26,11 @@ def transform(data,components):
             data[i][j]-=mean[j]
     ans=[]
     for line in data:
-        ans.append([dot_product(line,components[0]),dot_product(line,components[1]),dot_product(line,components[2])])
+        #ans.append([dot_product(line,components[0]),dot_product(line,components[1]),dot_product(line,components[2])])
+        ans.append([dot_product(line,components[x]) for x in range(3)])
     return ans
+
+
 
 def readData(filename):
     data=[]
@@ -33,7 +40,41 @@ def readData(filename):
             data.append([float(x) for x in line])
     return data
 
-def test(m,s):
+def readAccelerationMatrix(filename):
+    acceleration=[]
+    matrix=[]
+    with open(filename) as f:
+        reader=csv.reader(f)
+        for line in reader:
+            acceleration.append([float(line[x]) for x in range(0,3)])
+            matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
+    return acceleration,matrix
+
+def getGlobalData(filename):
+    acceleration,matrix=readAccelerationMatrix(filename)
+    m_components=pcaTrain(acceleration,filename)
+    global_acceleration=transform(acceleration,m_components)
+    angular=[]
+    current=m_components
+    for m in matrix:
+        tmp=[]
+        for i in np.dot(current,m).tolist():
+            tmp=tmp+i
+        print(tmp)
+        s=getOrientationFromMatrix(tmp)
+        angular.append(s)
+    str=filename.split('\\')
+    str[-2]="pca"
+    outputfile="\\".join(str)
+    output=open(outputfile,"w",newline="")
+    writer=csv.writer(output)
+    for i in range(len(global_acceleration)):
+        writer.writerow(global_acceleration[i]+angular[i])
+    return global_acceleration,angular
+
+
+
+'''def test(m,s):
     m_data=readData(m)
     s_data=readData(s)
     m_components=pcaTrain(m_data)
@@ -50,7 +91,7 @@ def test(m,s):
     writeData(s.split('.')[0]+"transform.csv",s_final_data)
     result=[pearson_correlation(np.mat(m_final_data)[:,i],np.mat(s_final_data)[:,i]) for i in range(3)]
     print(result)
-    return result
+    return result'''
 
 def writeData(filename,data):
     with open(filename,'w',newline="") as f:
@@ -74,19 +115,6 @@ def writeData(filename,data):
 
 
 
-def pearson_correlation(x,y):
-    mean_x=sum(x)/len(x)
-    mean_y=sum(y)/len(y)
-    lxx=0
-    lyy=0
-    lxy=0
-    for i in range(min(len(x),len(y))):
-        lxy+=(x[i]-mean_x)*(y[i]-mean_y)
-        lxx+=(x[i]-mean_x)*(x[i]-mean_x)
-        lyy+=(y[i]-mean_y)*(y[i]-mean_y)
-    return lxy/math.sqrt(lxx*lyy)
-
-
 def dot_product(x,y):
     s=0.0
     for i in range(len(x)):
@@ -100,26 +128,10 @@ def getOrientationFromMatrix(R):
     values.append(math.atan2(-R[6], R[8]))
     return values
 
-def matrixMultiple(a,b):
-    result=[0 for i in range(9)]
-    result[0] = a[0] * b[0] + a[1] * b[3] + a[2] * b[6]
-    result[1] = a[0] * b[1] + a[1] * b[4] + a[2] * b[7]
-    result[2] = a[0] * b[2] + a[1] * b[5] + a[2] * b[8]
 
-    result[3] = a[3] * b[0] + a[4] * b[3] + a[5] * b[6]
-    result[4] = a[3] * b[1] + a[4] * b[4] + a[5] * b[7]
-    result[5] = a[3] * b[2] + a[4] * b[5] + a[5] * b[8]
-
-    result[6] = a[6] * b[0] + a[7] * b[3] + a[8] * b[6]
-    result[7] = a[6] * b[1] + a[7] * b[4] + a[8] * b[7]
-    result[8] = a[6] * b[2] + a[7] * b[5] + a[8] * b[8]
-
-    return result;
-#filename="E:\\SensorData\\ouput\\m1t.csv"
-#ransform(filename)
-#test("E:\\SensorData\\ouput\\m1t.csv","E:\\SensorData\\ouput\\s1t.csv")
 if __name__=="__main__":
-    test("E:\\SensorData\\pcatest\\masterlocal-9tt.csv","E:\\SensorData\\pcatest\\slavelocal-9tt.csv")
-#transform("E:\\SensorData\\ouput\\masterlocal-3tt.csv")
-#transformGyro("E:\\SensorData\\ouput\\masterlocal-2tt.csv","E:\\SensorData\\ouput\\masterlocal-2tgyro.csv")
-#transformGyro("E:\\SensorData\\ouput\\slavelocal-2tt.csv","E:\\SensorData\\ouput\\slavelocal-2tgyro.csv")
+    filepath="E:\\SensorData\\transform"
+    files=os.listdir(filepath)
+    for f in files:
+        filename=os.path.join(filepath,f)
+        getGlobalData(filename)
