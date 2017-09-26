@@ -1,6 +1,16 @@
 import numpy as np
 import math
-from pca import readData
+import csv
+
+def read(filename):
+    acc=[]
+    angular=[]
+    with open(filename) as f:
+        reader=csv.reader(f)
+        for line in reader:
+            acc.append([float(line[x]) for x in range(3)])
+            angular.append([float(line[x]) for x in range(3,6)])
+    return np.mat(acc),np.mat(angular)
 
 def getPara(data):
     mean=sum(data)/len(data)
@@ -72,27 +82,63 @@ def check_levelcrossing(bits,index,m):
             checked_index.append(i)
     return checked_index
 
-if __name__=="__main__":
+def compareData(mdata,sdata):
     m=5
     alpha=0.2
-    mdata=np.mat(readData("E:\\SensorData\\pcatest\\masterlocal-9tttransform.csv"))
-    sdata=np.mat(readData("E:\\SensorData\\pcatest\\slavelocal-9tttransform.csv"))
-    mbits, mindex = handler(mdata[:, 0], m, alpha)
-    sbits,sindex=handler(sdata[:,0],m,alpha)
-    common=list(set(mindex).intersection(set(sindex)))
-    com_mbits=[mbits[i] for i in common]
-    com_sbits=[sbits[i] for i in common]
-    counter=0
-    for i in range(len(common)):
-        if com_mbits[i]!=com_sbits[i]:
-            counter+=1
-    print(counter)
-
-    m_levelcrossing_bits,m_levelcrossing_index=levelcrossing(mdata[:,1],m, alpha)
-    s_levelcrossing_bits,s_levelcrossing_index = levelcrossing(sdata[:, 1], m, alpha)
-    checked_index=check_levelcrossing(s_levelcrossing_bits,m_levelcrossing_index,m)
-    print(m_levelcrossing_index)
-    print(s_levelcrossing_index)
+    m_levelcrossing_bits,m_levelcrossing_index=levelcrossing(mdata,m, alpha)
+    s_levelcrossing_bits,s_levelcrossing_index = levelcrossing(sdata, m, alpha)
+    checked_index = check_levelcrossing(s_levelcrossing_bits, m_levelcrossing_index, m)
     print(checked_index)
-    print([m_levelcrossing_bits[i] for i in checked_index])
-    print([s_levelcrossing_bits[i] for i in checked_index])
+    mfinal=[m_levelcrossing_bits[i] for i in checked_index]
+    sfinal=[s_levelcrossing_bits[i] for i in checked_index]
+    error=0
+    for i in range(len(mfinal)):
+        error+=1
+    return error,mfinal,sfinal
+
+
+def compareByLevelcrossing(mfile,sfile):
+    output=open("E:\SensorData\pca\levelcrossing.txt",'a',newline="")
+    macc,mangular=read(mfile)
+    sacc,sangular=read(sfile)
+    output.writelines(mfile+" "+sfile)
+    output.writelines("acceleration")
+    for i in range(3):
+        error,mfinal,sfinal=compareData(macc[:,i],sacc[:,i])
+        output.writelines("error:"+str(error))
+        output.writelines(str(mfinal))
+        output.writelines(str(sfinal))
+    output.writelines("angular")
+    for i in range(3):
+        error,mfinal,sfinal=compareData(mangular[:,i],sangular[:,i])
+        output.writelines("error:"+str(error))
+        output.writelines(str(mfinal))
+        output.writelines(str(sfinal))
+
+
+if __name__=="__main__":
+    '''   m=5
+       alpha=0.2
+       mdata=np.mat(readData("E:\\SensorData\\pcatest\\masterlocal-9tttransform.csv"))
+       sdata=np.mat(readData("E:\\SensorData\\pcatest\\slavelocal-9tttransform.csv"))
+       mbits, mindex = handler(mdata[:, 0], m, alpha)
+       sbits,sindex=handler(sdata[:,0],m,alpha)
+       common=list(set(mindex).intersection(set(sindex)))
+       com_mbits=[mbits[i] for i in common]
+       com_sbits=[sbits[i] for i in common]
+       counter=0
+       for i in range(len(common)):
+           if com_mbits[i]!=com_sbits[i]:
+               counter+=1
+       print(counter)
+
+       m_levelcrossing_bits,m_levelcrossing_index=levelcrossing(mdata[:,1],m, alpha)
+       s_levelcrossing_bits,s_levelcrossing_index = levelcrossing(sdata[:, 1], m, alpha)
+       checked_index=check_levelcrossing(s_levelcrossing_bits,m_levelcrossing_index,m)
+       print(m_levelcrossing_index)
+       print(s_levelcrossing_index)
+       print(checked_index)
+       print([m_levelcrossing_bits[i] for i in checked_index])
+       print([s_levelcrossing_bits[i] for i in checked_index])'''
+    compareByLevelcrossing("E:\SensorData\pca\masterlocal-1.csv","E:\SensorData\pca\slavelocal-1.csv")
+

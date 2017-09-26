@@ -83,12 +83,16 @@ def getGlobalData(filename,start):
     global_acceleration=transform(acceleration,m_components)
     angular=[]
     current=m_components
+    pre=[]
     for m in matrix:
         tmp=[]
         for i in np.dot(current,m).tolist():
             tmp=tmp+i
         print(tmp)
         s=getOrientationFromMatrix(tmp)
+        if len(pre)>0:
+            s=smoothAngular(pre,s)
+        pre = s
         angular.append(s)
     str=filename.split('\\')
     str[-2]="pca"
@@ -99,7 +103,16 @@ def getGlobalData(filename,start):
         writer.writerow(global_acceleration[i]+angular[i])
     return global_acceleration,angular
 
-
+def smoothAngular(pre,current):
+    result=[]
+    for i in range(len(pre)):
+        if current[i]-pre[i]>4:
+            result.append(current[i]-2*math.pi)
+        elif pre[i]-current[i]>4:
+            result.append(current[i]+2*math.pi)
+        else:
+            result.append(current[i])
+    return result
 
 '''def test(m,s):
     m_data=readData(m)
