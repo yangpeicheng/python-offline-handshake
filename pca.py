@@ -3,6 +3,9 @@ import csv
 import math
 import numpy as np
 import os
+from compare import pearson_correlation
+from subData import getMagnitude
+
 def  pcaTrain(data,filename):
     pca=PCA(n_components=3)
     pca.fit(data[0:50])
@@ -50,8 +53,32 @@ def readAccelerationMatrix(filename):
             matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
     return acceleration,matrix
 
-def getGlobalData(filename):
+def align(mfile,sfile):
+    m,mt=readAccelerationMatrix(mfile)
+    s,st=readAccelerationMatrix(sfile)
+    length = 50
+    m_magnitude=[getMagnitude(m[i]) for i in range(length*2)]
+    s_magnitude=[getMagnitude(s[i]) for i in range(length*2)]
+    m_start=0
+    s_start=0
+    correlation=0
+    for i in range(length):
+        for j in range(length):
+            tmp=pearson_correlation(m_magnitude[i:i+length],s_magnitude[j:j+length])
+            if tmp>correlation:
+                m_start=i
+                s_start=j
+                correlation=tmp
+    return m_start,s_start
+
+
+
+
+
+def getGlobalData(filename,start):
     acceleration,matrix=readAccelerationMatrix(filename)
+    acceleration=acceleration[start:]
+    matrix=matrix[start:]
     m_components=pcaTrain(acceleration,filename)
     global_acceleration=transform(acceleration,m_components)
     angular=[]
@@ -128,10 +155,32 @@ def getOrientationFromMatrix(R):
     values.append(math.atan2(-R[6], R[8]))
     return values
 
+def instanceOfPca():
+    filepath = "E:\\SensorData\\transform"
+    files=os.listdir(filepath)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,13):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            mfilename=os.path.join(filepath,mfile)
+            sfilename=os.path.join(filepath,sfile)
+            mstart,sstart=align(mfilename,sfilename)
+            getGlobalData(mfilename,mstart)
+            getGlobalData(sfilename,sstart)
 
 if __name__=="__main__":
-    filepath="E:\\SensorData\\transform"
+    filepath = "E:\\SensorData\\transform"
     files=os.listdir(filepath)
-    for f in files:
-        filename=os.path.join(filepath,f)
-        getGlobalData(filename)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,13):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            mfilename=os.path.join(filepath,mfile)
+            sfilename=os.path.join(filepath,sfile)
+            mstart,sstart=align(mfilename,sfilename)
+            getGlobalData(mfilename,mstart)
+            getGlobalData(sfilename,sstart)

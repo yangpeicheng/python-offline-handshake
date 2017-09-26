@@ -42,7 +42,7 @@ def getMagnitude(data):
 #data ---acceleration data
 def findHandShake(data):
     magnitude,variance=init(data)
-    MAGNITUDE_THRESHOLD = 1.0
+    MAGNITUDE_THRESHOLD = 1.5
     VARIANCE_THRESHOLD = 0.2
     preState=True
     downIndex=[]
@@ -82,7 +82,12 @@ def readCompleteData(filename):
             acceleration.append([float(line[x]) for x in range(3,6)])
     return acceleration
 
-
+def instanceOfSubdata():
+    filepath="E:\\SensorData\\temp"
+    files=os.listdir(filepath)
+    for f in files:
+        filename=os.path.join(filepath,f)
+        extract(filename)
 
 
 if __name__=="__main__":

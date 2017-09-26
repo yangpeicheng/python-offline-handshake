@@ -45,6 +45,13 @@ def handler(m):
             writer.writerow(acceleration[i]+tmp)
     return acceleration,matrix
 
+def instanceOfTransform():
+    filepath="E:\\SensorData\\handshake"
+    files=os.listdir(filepath)
+    for f in files:
+        filename=os.path.join(filepath,f)
+        handler(filename)
+
 if __name__=="__main__":
     filepath="E:\\SensorData\\handshake"
     files=os.listdir(filepath)
