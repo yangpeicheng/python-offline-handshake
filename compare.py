@@ -40,7 +40,7 @@ def pearson_correlation(x,y):
     return lxy/math.sqrt(lxx*lyy)
 
 def instanceOfCompare():
-    filepath="E:\SensorData\pca"
+    filepath = os.getcwd() + "\\data\\pca"
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
@@ -51,7 +51,7 @@ def instanceOfCompare():
             compare(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
 
 if __name__=="__main__":
-    filepath="E:\SensorData\pca"
+    filepath = os.getcwd() + "\\data\\pca"
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"

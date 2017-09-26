@@ -1,0 +1,108 @@
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-1.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-1.csv
+acceleration
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1]
+[0, 1, 0, 1, 0, 1, 0, 1]
+angular
+error:0.0
+[1, 0, 1, 0, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-2.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-2.csv
+acceleration
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+angular
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-3.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-3.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+angular
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 1]
+[0, 1, 0, 1, 0, 1, 0, 1, 1]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-4.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-4.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+angular
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-5.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-5.csv
+acceleration
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+angular
+error:0.09090909090909091
+[1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-6.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-6.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+angular
+error:0.7
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 2, 1, 2, 1, 2, 0, 2, 0, 2]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-7.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-7.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0]
+angular
+error:0.75
+[0, 0, 1, 0]
+[1, 2, 1, 1]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-8.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-8.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+angular
+error:1.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-9.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-9.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1, 0, 1]
+angular
+error:0.0
+[0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-10.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-10.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 0, 1, 0, 1, 0]
+angular
+error:0.0
+[0, 1, 0, 0, 1, 1, 0]
+[0, 1, 0, 0, 1, 1, 0]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-11.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-11.csv
+acceleration
+error:0.0
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+angular
+error:1.0
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+C:\Users\10959\Desktop\python-offline-handshake\data\pca\masterlocal-12.csv C:\Users\10959\Desktop\python-offline-handshake\data\pca\slavelocal-12.csv
+acceleration
+error:0.0
+[1, 0, 1, 0, 1, 0, 1, 0, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 0]
+angular
+error:0.0
+[1, 0, 1, 0, 0, 0, 0]
+[1, 0, 1, 0, 0, 0, 0]

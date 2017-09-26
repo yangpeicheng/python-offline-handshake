@@ -46,14 +46,14 @@ def handler(m):
     return acceleration,matrix
 
 def instanceOfTransform():
-    filepath="E:\\SensorData\\handshake"
+    filepath=os.getcwd()+"\\data\\handshake"
     files=os.listdir(filepath)
     for f in files:
         filename=os.path.join(filepath,f)
         handler(filename)
 
 if __name__=="__main__":
-    filepath="E:\\SensorData\\handshake"
+    filepath = os.getcwd() + "\\data\\handshake"
     files=os.listdir(filepath)
     for f in files:
         filename=os.path.join(filepath,f)

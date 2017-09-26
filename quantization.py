@@ -1,6 +1,8 @@
 import numpy as np
 import math
 import csv
+import os
+from compare import pearson_correlation
 
 def read(filename):
     acc=[]
@@ -53,11 +55,11 @@ def levelcrossing(data_list,m,alpha):
     while i<len(data_list):
         bit=quantizer(data_list[i],q_plus,q_minus)
         bits.append(bit)
-        if bit==preBit:
+        if bit==preBit and bit!=2:
             counter+=1
         else:
             if counter>=m:
-                start=i-m
+                start=i-counter
                 end=i-1
                 index.append(int((start+end)/2))
             counter=1
@@ -88,32 +90,35 @@ def compareData(mdata,sdata):
     m_levelcrossing_bits,m_levelcrossing_index=levelcrossing(mdata,m, alpha)
     s_levelcrossing_bits,s_levelcrossing_index = levelcrossing(sdata, m, alpha)
     checked_index = check_levelcrossing(s_levelcrossing_bits, m_levelcrossing_index, m)
-    print(checked_index)
     mfinal=[m_levelcrossing_bits[i] for i in checked_index]
     sfinal=[s_levelcrossing_bits[i] for i in checked_index]
-    error=0
+    error=0.0
     for i in range(len(mfinal)):
-        error+=1
-    return error,mfinal,sfinal
+        if mfinal[i]!=sfinal[i]:
+            error+=1
+    return error/len(sfinal),mfinal,sfinal
 
 
 def compareByLevelcrossing(mfile,sfile):
-    output=open("E:\SensorData\pca\levelcrossing.txt",'a',newline="")
+    filepath = os.getcwd() + "\\data\\pca\\levelcrossing.txt"
+    output=open(filepath,'a',newline="")
     macc,mangular=read(mfile)
     sacc,sangular=read(sfile)
-    output.writelines(mfile+" "+sfile)
-    output.writelines("acceleration")
-    for i in range(3):
+    if pearson_correlation(macc[:50,0],sacc[:50,0])<0:
+        macc=-macc
+    output.writelines(mfile+" "+sfile+'\r\n')
+    output.writelines("acceleration\r\n")
+    for i in range(1):
         error,mfinal,sfinal=compareData(macc[:,i],sacc[:,i])
-        output.writelines("error:"+str(error))
-        output.writelines(str(mfinal))
-        output.writelines(str(sfinal))
-    output.writelines("angular")
-    for i in range(3):
+        output.writelines("error:"+str(error)+'\r\n')
+        output.writelines(str(mfinal)+'\r\n')
+        output.writelines(str(sfinal)+'\r\n')
+    output.writelines("angular\r\n")
+    for i in range(1):
         error,mfinal,sfinal=compareData(mangular[:,i],sangular[:,i])
-        output.writelines("error:"+str(error))
-        output.writelines(str(mfinal))
-        output.writelines(str(sfinal))
+        output.writelines("error:"+str(error)+'\r\n')
+        output.writelines(str(mfinal)+'\r\n')
+        output.writelines(str(sfinal)+'\r\n')
 
 
 if __name__=="__main__":
@@ -140,5 +145,17 @@ if __name__=="__main__":
        print(checked_index)
        print([m_levelcrossing_bits[i] for i in checked_index])
        print([s_levelcrossing_bits[i] for i in checked_index])'''
-    compareByLevelcrossing("E:\SensorData\pca\masterlocal-1.csv","E:\SensorData\pca\slavelocal-1.csv")
+    filepath=os.getcwd()+"\\data\\pca"
+    files=os.listdir(filepath)
+    #print(files)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,13):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            mfilename=os.path.join(filepath,mfile)
+            sfilename=os.path.join(filepath,sfile)
+            compareByLevelcrossing(mfilename,sfilename)
+
 

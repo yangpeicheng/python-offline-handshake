@@ -83,7 +83,7 @@ def readCompleteData(filename):
     return acceleration
 
 def instanceOfSubdata():
-    filepath="E:\\SensorData\\temp"
+    filepath=os.getcwd()+"\\data\\temp"
     files=os.listdir(filepath)
     for f in files:
         filename=os.path.join(filepath,f)
@@ -91,7 +91,7 @@ def instanceOfSubdata():
 
 
 if __name__=="__main__":
-    filepath="E:\\SensorData\\temp"
+    filepath = os.getcwd() + "\\data\\temp"
     files=os.listdir(filepath)
     for f in files:
         filename=os.path.join(filepath,f)

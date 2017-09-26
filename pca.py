@@ -169,7 +169,7 @@ def getOrientationFromMatrix(R):
     return values
 
 def instanceOfPca():
-    filepath = "E:\\SensorData\\transform"
+    filepath = os.getcwd()+"\\data\\transform"
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
@@ -184,7 +184,7 @@ def instanceOfPca():
             getGlobalData(sfilename,sstart)
 
 if __name__=="__main__":
-    filepath = "E:\\SensorData\\transform"
+    filepath = os.getcwd() + "\\data\\transform"
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
