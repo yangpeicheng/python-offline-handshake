@@ -14,7 +14,7 @@ def read(filename):
     return np.mat(acceleration),np.mat(angular)
 
 def compare(m,s):
-    filename="E:\SensorData\pca\\result.txt"
+    filename=os.getcwd() + "\\data\\pca\\result.txt"
     m_acc,m_angular=read(m)
     s_acc,s_angular=read(s)
     acc_correlation=[pearson_correlation(m_acc[:,i],s_acc[:,i]) for i in range(3)]

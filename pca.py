@@ -184,16 +184,4 @@ def instanceOfPca():
             getGlobalData(sfilename,sstart)
 
 if __name__=="__main__":
-    filepath = os.getcwd() + "\\data\\transform"
-    files=os.listdir(filepath)
-    master="masterlocal"
-    slave="slavelocal"
-    for i in range(1,13):
-        mfile=master+"-"+str(i)+".csv"
-        sfile=slave+"-"+str(i)+".csv"
-        if mfile in files and sfile in files:
-            mfilename=os.path.join(filepath,mfile)
-            sfilename=os.path.join(filepath,sfile)
-            mstart,sstart=align(mfilename,sfilename)
-            getGlobalData(mfilename,mstart)
-            getGlobalData(sfilename,sstart)
+    instanceOfPca()

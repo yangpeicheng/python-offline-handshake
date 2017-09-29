@@ -2,8 +2,8 @@ import step
 import os
 import shutil
 
-toPath="E:\SensorData\master"
-fromPath="E:\SensorData\data"
+toPath=os.getcwd()+"\\data\\master"
+fromPath=os.getcwd()+"\\data\\data"
 index=0
 for filename in os.listdir(toPath):
     num=int(filename.split('.',1)[0].split('-',1)[1])

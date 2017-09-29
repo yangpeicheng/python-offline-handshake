@@ -111,8 +111,10 @@ def compareByLevelcrossing(mfile,sfile):
     for i in range(1):
         error,mfinal,sfinal=compareData(macc[:,i],sacc[:,i])
         output.writelines("error:"+str(error)+'\r\n')
+        output.writelines('len:' + str(len(sfinal)) + '\r\n')
         output.writelines(str(mfinal)+'\r\n')
         output.writelines(str(sfinal)+'\r\n')
+
     output.writelines("angular\r\n")
     for i in range(1):
         error,mfinal,sfinal=compareData(mangular[:,i],sangular[:,i])
@@ -120,31 +122,31 @@ def compareByLevelcrossing(mfile,sfile):
         output.writelines(str(mfinal)+'\r\n')
         output.writelines(str(sfinal)+'\r\n')
 
+def comparenormal(mfile,sfile):
+    m=5
+    alpha=0.2
+    filepath = os.getcwd() + "\\data\\pca\\normal.txt"
+    output=open(filepath,'a',newline="")
+    macc,mangular=read(mfile)
+    sacc,sangular=read(sfile)
+    if pearson_correlation(macc[:50,0],sacc[:50,0])<0:
+        macc=-macc
+    mbits, mindex = handler(macc[:, 0], m, alpha)
+    sbits, sindex = handler(sacc[:, 0], m, alpha)
+    common = list(set(mindex).intersection(set(sindex)))
+    com_mbits = [mbits[i] for i in common]
+    com_sbits = [sbits[i] for i in common]
+    counter = 0.0
+    for i in range(len(common)):
+        if com_mbits[i] != com_sbits[i]:
+            counter += 1
+    output.writelines(mfile+" "+sfile+'\r\n')
+    output.writelines(str(com_mbits)+'\r\n')
+    output.writelines(str(com_sbits)+'\r\n')
+    output.writelines('error:'+str(counter/len(common))+'\r\n')
+    output.writelines('len:'+str(len(common))+'\r\n')
 
-if __name__=="__main__":
-    '''   m=5
-       alpha=0.2
-       mdata=np.mat(readData("E:\\SensorData\\pcatest\\masterlocal-9tttransform.csv"))
-       sdata=np.mat(readData("E:\\SensorData\\pcatest\\slavelocal-9tttransform.csv"))
-       mbits, mindex = handler(mdata[:, 0], m, alpha)
-       sbits,sindex=handler(sdata[:,0],m,alpha)
-       common=list(set(mindex).intersection(set(sindex)))
-       com_mbits=[mbits[i] for i in common]
-       com_sbits=[sbits[i] for i in common]
-       counter=0
-       for i in range(len(common)):
-           if com_mbits[i]!=com_sbits[i]:
-               counter+=1
-       print(counter)
-
-       m_levelcrossing_bits,m_levelcrossing_index=levelcrossing(mdata[:,1],m, alpha)
-       s_levelcrossing_bits,s_levelcrossing_index = levelcrossing(sdata[:, 1], m, alpha)
-       checked_index=check_levelcrossing(s_levelcrossing_bits,m_levelcrossing_index,m)
-       print(m_levelcrossing_index)
-       print(s_levelcrossing_index)
-       print(checked_index)
-       print([m_levelcrossing_bits[i] for i in checked_index])
-       print([s_levelcrossing_bits[i] for i in checked_index])'''
+def testlevelcrossing():
     filepath=os.getcwd()+"\\data\\pca"
     files=os.listdir(filepath)
     #print(files)
@@ -157,5 +159,27 @@ if __name__=="__main__":
             mfilename=os.path.join(filepath,mfile)
             sfilename=os.path.join(filepath,sfile)
             compareByLevelcrossing(mfilename,sfilename)
+
+
+
+def testnormal():
+    filepath=os.getcwd()+"\\data\\pca"
+    files=os.listdir(filepath)
+    #print(files)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,13):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            mfilename=os.path.join(filepath,mfile)
+            sfilename=os.path.join(filepath,sfile)
+            comparenormal(mfilename,sfilename)
+
+if __name__=="__main__":
+    testlevelcrossing()
+    testnormal()
+
+
 
 
