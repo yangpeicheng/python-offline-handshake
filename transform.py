@@ -19,6 +19,7 @@ def handler(m):
     NS2S = 1.0 / 1000000000.0
     acceleration=[]
     matrix=[]
+    gravity=[]
     current=np.eye(3)
     last_timestamp=0
     with open(m) as f:
@@ -28,10 +29,12 @@ def handler(m):
             if last_timestamp>0 and time!=last_timestamp:
                 gyro=np.array([float(line[i]) for i in range(9,12)])
                 lineacc=np.array([float(line[i]) for i in range(3,6)]).transpose()
+                g=[float(line[i]) for i in range(6,9)]
                 dt=(time-last_timestamp)*NS2S
                 current=updateMatrix(current,gyro,dt)
                 acceleration.append(np.dot(current,lineacc).tolist())
                 matrix.append(current.tolist())
+                gravity.append(g)
             last_timestamp=time
     s=m.split('\\')
     s[-2]="transform"
@@ -42,6 +45,7 @@ def handler(m):
             tmp=[]
             for j in range(3):
                 tmp=tmp+matrix[i][j]
+            tmp=tmp+gravity[i]
             writer.writerow(acceleration[i]+tmp)
     return acceleration,matrix
 
@@ -53,8 +57,4 @@ def instanceOfTransform():
         handler(filename)
 
 if __name__=="__main__":
-    filepath = os.getcwd() + "\\data\\handshake"
-    files=os.listdir(filepath)
-    for f in files:
-        filename=os.path.join(filepath,f)
-        handler(filename)
+    instanceOfTransform()

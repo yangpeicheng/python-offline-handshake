@@ -58,7 +58,7 @@ def findHandShake(data):
     print(downIndex)
     print(upIndex)
     while i<min(len(upIndex),len(downIndex)-1):
-        if downIndex[i+1]-upIndex[i]<3:
+        if downIndex[i+1]-upIndex[i]<10:
             downIndex.pop(i+1)
             upIndex.pop(i)
         else:

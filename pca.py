@@ -9,7 +9,7 @@ from subData import getMagnitude
 def  pcaTrain(data,filename):
     pca=PCA(n_components=3)
     pca.fit(data[0:50])
-    with open("E:\SensorData\pca\\variance_ratio.txt",'a') as f:
+    with open(os.getcwd()+"\\data\\pca\\variance_ratio.txt",'a') as f:
         f.writelines(filename+'\r\n')
         tmp=[str(pca.explained_variance_ratio_[i]) for i in range(3)]
         f.writelines(",".join(tmp)+'\r\n')
@@ -33,15 +33,6 @@ def transform(data,components):
         ans.append([dot_product(line,components[x]) for x in range(3)])
     return ans
 
-
-
-def readData(filename):
-    data=[]
-    with open(filename) as f:
-        reader=csv.reader(f)
-        for line in reader:
-            data.append([float(x) for x in line])
-    return data
 
 def readAccelerationMatrix(filename):
     acceleration=[]
@@ -173,7 +164,7 @@ def instanceOfPca():
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,13):
+    for i in range(1,22):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
