@@ -94,4 +94,4 @@ def convertFromSphericalToCardinal(r,fi,theta):
 
 if __name__=="__main__":
     filepath=os.getcwd()+"\\data\\transform"
-    compare(os.path.join(filepath,"masterlocal-1.csv"),os.path.join(filepath,"slavelocal-1.csv"))
+    compare(os.path.join(filepath,"masterlocal-8.csv"),os.path.join(filepath,"slavelocal-8.csv"))

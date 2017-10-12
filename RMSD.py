@@ -1,7 +1,8 @@
 import numpy as np
 import os
 import csv
-from pca import readAccelerationMatrix
+from pca import readAccelerationMatrix,align
+
 
 def qmul(p,q):
     a0=p[0]
@@ -21,13 +22,11 @@ def rotquat(p,u):
 
 def residuum(X,Y):
     R=np.dot(X,Y.transpose()).tolist()
-    print(R)
     F=np.array([[R[0][0]+R[1][1]+R[2][2],R[1][2]-R[2][1],R[2][0]-R[0][2],R[0][1]-R[1][0]],
        [R[1][2]-R[2][1],R[0][0]-R[1][1]-R[2][2],R[0][1]+R[1][0],R[0][2]+R[2][0]],
        [R[2][0]-R[0][2],R[0][1]+R[1][0],-R[0][0]+R[1][1]-R[2][2],R[1][2]+R[2][1]],
        [R[0][1]-R[1][0],R[0][2]+R[2][0],R[1][2]+R[2][1],-R[0][0]-R[1][1]+R[2][2]]
        ])
-    print(F)
     V,D=np.linalg.eig(F)
     ev=V[0]
     evv=D[:,0]
@@ -36,8 +35,7 @@ def residuum(X,Y):
             ev=V[i]
             evv=D[:,i]
     evv=evv.tolist()
-    print(evv)
-    return reser(X,evv)
+    return evv
 
 def reser(X,u):
     result=[]
@@ -57,11 +55,31 @@ def output(file,data):
             out.writerow(i)
 
 if __name__=="__main__":
-    m=os.getcwd()+"\\data\\transform\\masterlocal-1.csv"
-    m_a,m_matrix=readAccelerationMatrix(m)
-    m_a=np.mat(m_a[:200]).transpose()
-    s=os.getcwd()+"\\data\\transform\\slavelocal-1.csv"
-    s_a,s_matrix=readAccelerationMatrix(s)
-    s_a=np.mat(s_a[:200]).transpose()
-    data=residuum(m_a,s_a)
-    output(m,data)
+    filepath = os.getcwd()+"\\data\\transform"
+    files=os.listdir(filepath)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,22):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            m=os.path.join(filepath,mfile)
+            s=os.path.join(filepath,sfile)
+            m_a,m_matrix=readAccelerationMatrix(m)
+            s_a, s_matrix = readAccelerationMatrix(s)
+            m_start,s_start=align(m,s)
+            m_a=m_a[m_start:]
+            s_a=s_a[s_start:]
+            if len(m_a)>len(s_a):
+                l=len(s_a)
+            else:
+                l = len(m_a)
+            m_a = np.mat(m_a[:l]).transpose()
+            s_a=np.mat(s_a[:l]).transpose()
+            testnum=int(l/4)
+            tm_a =m_a[:,:testnum]
+            ts_a=s_a[:,:testnum]
+            evv=residuum(tm_a,ts_a)
+            data=reser(m_a,evv)
+            output(m,data)
+            output(s,s_a.transpose().tolist())

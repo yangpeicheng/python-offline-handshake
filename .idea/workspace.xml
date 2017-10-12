@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e8b452-57df-448b-b1a8-fdf067793814" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RMSD.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spatial_alignment.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/transform/t.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/adb.iml" afterPath="$PROJECT_DIR$/.idea/adb.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/handshake/masterlocal-3.csv" afterPath="$PROJECT_DIR$/data/handshake/masterlocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/handshake/masterlocal-8.csv" afterPath="$PROJECT_DIR$/data/handshake/masterlocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/handshake/slavelocal-11.csv" afterPath="$PROJECT_DIR$/data/handshake/slavelocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/handshake/slavelocal-12.csv" afterPath="$PROJECT_DIR$/data/handshake/slavelocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/handshake/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/handshake/slavelocal-8.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMSD.py" afterPath="$PROJECT_DIR$/RMSD.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare.py" afterPath="$PROJECT_DIR$/compare.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RMSD/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/RMSD/masterlocal-1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-10.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-10.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-11.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-11.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-12.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-13.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-14.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-15.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-16.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-17.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-18.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-19.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-19.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-2.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-3.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-3.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-20.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-20.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-4.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-4.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-5.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-5.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/masterlocal-7.csv" afterPath="$PROJECT_DIR$/data/pca/masterlocal-7.csv" />
@@ -27,7 +31,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-10.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-10.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-11.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-11.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-12.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-12.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-13.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-13.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-14.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-14.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-15.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-15.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-16.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-16.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-17.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-17.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-18.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-18.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-19.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-19.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-2.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-21.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-21.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-3.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-3.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-4.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-4.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-5.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-5.csv" />
@@ -36,33 +48,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/slavelocal-9.csv" afterPath="$PROJECT_DIR$/data/pca/slavelocal-9.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/pca/variance_ratio.txt" afterPath="$PROJECT_DIR$/data/pca/variance_ratio.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-10.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-11.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-12.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-2.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-3.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-4.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-5.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-6.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-7.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-8.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-9.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-1.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-10.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-11.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-12.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-2.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-3.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-4.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-5.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-6.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-7.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-9.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pca.py" afterPath="$PROJECT_DIR$/pca.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subData.py" afterPath="$PROJECT_DIR$/subData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transform.py" afterPath="$PROJECT_DIR$/transform.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spatial_alignment.py" afterPath="$PROJECT_DIR$/spatial_alignment.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,21 +62,20 @@
       <file leaf-file-name="pca.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2231">
-              <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="2386">
+              <caret line="171" column="50" lean-forward="false" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-                <marker date="1507103244418" expanded="true" signature="193:260" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMSD.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RMSD.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMSD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="92">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -111,8 +96,8 @@
       <file leaf-file-name="spatial_alignment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spatial_alignment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+            <state relative-caret-position="1932">
+              <caret line="90" column="42" lean-forward="false" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -132,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compare.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="compare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="431">
+              <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -161,6 +146,7 @@
               <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <marker date="1507511797344" expanded="true" signature="520:589" ph="..." />
               </folding>
             </state>
           </provider>
@@ -198,7 +184,6 @@
         <option value="$PROJECT_DIR$/lms.py" />
         <option value="$PROJECT_DIR$/FFTtest.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/compare.py" />
         <option value="$PROJECT_DIR$/quantization.py" />
         <option value="$PROJECT_DIR$/step.py" />
         <option value="$PROJECT_DIR$/slave.py" />
@@ -208,10 +193,11 @@
         <option value="$PROJECT_DIR$/subData.py" />
         <option value="$PROJECT_DIR$/spatial_alignment.py" />
         <option value="$PROJECT_DIR$/RMSD.py" />
+        <option value="$PROJECT_DIR$/compare.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="294" />
     <option name="y" value="24" />
     <option name="width" value="1400" />
@@ -233,19 +219,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="python-offline-handshake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-offline-handshake" type="462c0819:PsiDirectoryNode" />
+              <item name="adb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.RMSD">
+  <component name="RunManager" selected="Python.compare">
     <configuration name="RMSD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,6 +273,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adb" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RMSD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="adb" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,23 +328,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="subData" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="adb" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="transform" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -362,16 +348,16 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.transform" />
       <item index="1" class="java.lang.String" itemvalue="Python.spatial_alignment" />
-      <item index="2" class="java.lang.String" itemvalue="Python.subData" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pca" />
-      <item index="4" class="java.lang.String" itemvalue="Python.RMSD" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pca" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RMSD" />
+      <item index="4" class="java.lang.String" itemvalue="Python.compare" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.RMSD" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pca" />
-        <item index="2" class="java.lang.String" itemvalue="Python.transform" />
-        <item index="3" class="java.lang.String" itemvalue="Python.subData" />
+        <item index="0" class="java.lang.String" itemvalue="Python.compare" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RMSD" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pca" />
+        <item index="3" class="java.lang.String" itemvalue="Python.transform" />
         <item index="4" class="java.lang.String" itemvalue="Python.spatial_alignment" />
       </list>
     </recent_temporary>
@@ -390,19 +376,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38941798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17142858" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -563,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,33 +556,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4163">
           <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/core/fromnumeric.py" />
+    <entry file="file://$PROJECT_DIR$/subData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2254">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
-          <caret line="1842" column="4" lean-forward="false" selection-start-line="1842" selection-start-column="4" selection-end-line="1842" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/core/numeric.py" />
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/linalg/linalg.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/numpy/core/multiarray.py" />
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/matrixlib/defmatrix.py" />
     <entry file="file://$PROJECT_DIR$/transform.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
           <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <marker date="1507511797344" expanded="true" signature="520:589" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spatial_alignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="90" column="42" lean-forward="false" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -614,54 +603,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subData.py">
+    <entry file="file://$PROJECT_DIR$/RMSD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2254">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="407" column="18" lean-forward="false" selection-start-line="407" selection-start-column="18" selection-end-line="407" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/linalg/linalg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2451">
-          <caret line="1013" column="66" lean-forward="true" selection-start-line="1013" selection-start-column="66" selection-end-line="1013" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="5696" column="4" lean-forward="false" selection-start-line="5696" selection-start-column="4" selection-end-line="5696" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2231">
-          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1507103244418" expanded="true" signature="193:260" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/matrixlib/defmatrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="310" column="17" lean-forward="false" selection-start-line="310" selection-start-column="17" selection-end-line="310" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,22 +621,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spatial_alignment.py">
+    <entry file="file://$PROJECT_DIR$/pca.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+        <state relative-caret-position="2386">
+          <caret line="171" column="50" lean-forward="false" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RMSD.py">
+    <entry file="file://$PROJECT_DIR$/compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state relative-caret-position="431">
+          <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
