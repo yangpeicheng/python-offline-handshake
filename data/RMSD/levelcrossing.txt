@@ -1,0 +1,252 @@
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-1.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-1.csv
+acceleration
+error:0.0
+len:23
+[1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-2.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-2.csv
+acceleration
+error:0.0
+len:25
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-3.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-3.csv
+acceleration
+error:5.0
+len:41
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-4.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-4.csv
+acceleration
+error:2.0
+len:35
+[0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-5.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-5.csv
+acceleration
+error:0.0
+len:36
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-6.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-6.csv
+acceleration
+error:0.0
+len:36
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-7.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-7.csv
+acceleration
+error:3.0
+len:31
+[1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0]
+[1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-8.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-8.csv
+acceleration
+error:1.0
+len:27
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-9.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-9.csv
+acceleration
+error:0.0
+len:27
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-10.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-10.csv
+acceleration
+error:0.0
+len:28
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-11.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-11.csv
+acceleration
+error:2.0
+len:29
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-12.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-12.csv
+acceleration
+error:1.0
+len:20
+[0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+[0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-13.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-13.csv
+acceleration
+error:14.0
+len:34
+[1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1]
+[1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-14.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-14.csv
+acceleration
+error:13.0
+len:46
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-15.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-15.csv
+acceleration
+error:25.0
+len:53
+[1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-16.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-16.csv
+acceleration
+error:0.0
+len:26
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-17.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-17.csv
+acceleration
+error:3.0
+len:22
+[0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0]
+[0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-18.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-18.csv
+acceleration
+error:0.0
+len:26
+[1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-19.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-19.csv
+acceleration
+error:5.0
+len:21
+[1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-20.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-20.csv
+acceleration
+error:2.0
+len:24
+[0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1]
+[0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-21.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-21.csv
+acceleration
+error:0.0
+len:24
+[1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+[1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-1.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-1.csv
+acceleration
+error:0.0
+len:24
+[1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-2.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-2.csv
+acceleration
+error:0.0
+len:29
+[0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-3.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-3.csv
+acceleration
+error:3.0
+len:39
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-4.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-4.csv
+acceleration
+error:0.0
+len:34
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-5.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-5.csv
+acceleration
+error:0.0
+len:37
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-6.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-6.csv
+acceleration
+error:0.0
+len:34
+[0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-7.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-7.csv
+acceleration
+error:2.0
+len:29
+[1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+[1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-8.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-8.csv
+acceleration
+error:0.0
+len:23
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-9.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-9.csv
+acceleration
+error:0.0
+len:24
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-10.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-10.csv
+acceleration
+error:0.0
+len:26
+[1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1]
+[1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-11.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-11.csv
+acceleration
+error:2.0
+len:30
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-12.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-12.csv
+acceleration
+error:1.0
+len:18
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-13.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-13.csv
+acceleration
+error:12.0
+len:28
+[1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0]
+[1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-14.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-14.csv
+acceleration
+error:2.0
+len:40
+[1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-15.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-15.csv
+acceleration
+error:24.0
+len:47
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-16.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-16.csv
+acceleration
+error:0.0
+len:27
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-17.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-17.csv
+acceleration
+error:3.0
+len:20
+[0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-18.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-18.csv
+acceleration
+error:0.0
+len:26
+[1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-19.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-19.csv
+acceleration
+error:4.0
+len:20
+[1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+[1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-20.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-20.csv
+acceleration
+error:1.0
+len:20
+[0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1]
+[0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1]
+C:\Users\yangpc\Desktop\adb\data\RMSD\masterlocal-21.csv C:\Users\yangpc\Desktop\adb\data\RMSD\slavelocal-21.csv
+acceleration
+error:0.0
+len:23
+[1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+[1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0]

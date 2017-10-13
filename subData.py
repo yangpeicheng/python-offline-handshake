@@ -2,6 +2,7 @@ import csv
 import math
 import numpy as np
 import os
+from Utils import getMagnitude
 
 def extract(m):
     acceleration=readCompleteData(m)
@@ -32,12 +33,6 @@ def init(data):
             variance.append(np.var(window))
             window.pop(0)
     return magnitude,variance
-
-def getMagnitude(data):
-    sum=0
-    for i in data:
-        sum+=i*i
-    return math.sqrt(sum)
 
 #data ---acceleration data
 def findHandShake(data):

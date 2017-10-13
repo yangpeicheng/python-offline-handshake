@@ -1,4 +1,4 @@
-import math
+from Utils import pearson_correlation
 import numpy as np
 import csv
 import os
@@ -52,17 +52,6 @@ def compareAcc(m,s):
         tmp_acc=[str(acc_correlation[i]) for i in range(3) ]
         f.writelines(",".join(tmp_acc)+"\r\n")
 
-def pearson_correlation(x,y):
-    mean_x=sum(x)/len(x)
-    mean_y=sum(y)/len(y)
-    lxx=0
-    lyy=0
-    lxy=0
-    for i in range(min(len(x),len(y))):
-        lxy+=(x[i]-mean_x)*(y[i]-mean_y)
-        lxx+=(x[i]-mean_x)*(x[i]-mean_x)
-        lyy+=(y[i]-mean_y)*(y[i]-mean_y)
-    return float(lxy/math.sqrt(lxx*lyy))
 
 def instanceOfCompare():
     filepath = os.getcwd() + "\\data\\pca"

@@ -4,7 +4,7 @@ import numpy as np
 from compare import pearson_correlation
 import math
 from subData import getMagnitude
-from pca import align
+from Utils import align
 
 def readAccMatrixGravity(filename):
     acceleration=[]

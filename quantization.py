@@ -2,17 +2,7 @@ import numpy as np
 import math
 import csv
 import os
-from compare import pearson_correlation
-
-def read(filename):
-    acc=[]
-    angular=[]
-    with open(filename) as f:
-        reader=csv.reader(f)
-        for line in reader:
-            acc.append([float(line[x]) for x in range(3)])
-            angular.append([float(line[x]) for x in range(3,6)])
-    return np.mat(acc),np.mat(angular)
+from compare import pearson_correlation,read,readAcc
 
 def getPara(data):
     mean=sum(data)/len(data)
@@ -77,7 +67,7 @@ def check_levelcrossing(bits,index,m):
         if end>=len(bits):
             break
         for j in range(start,end+1):
-            if bit!=bits[j]:
+            if bit!=bits[j] or bit==2:
                 flag=False
                 break
         if flag:
@@ -96,31 +86,34 @@ def compareData(mdata,sdata):
     for i in range(len(mfinal)):
         if mfinal[i]!=sfinal[i]:
             error+=1
-    return error/len(sfinal),mfinal,sfinal
+    return error,mfinal,sfinal
 
 
 def compareByLevelcrossing(mfile,sfile):
     filepath = os.getcwd() + "\\data\\pca\\levelcrossing.txt"
+    sp=filepath.split("\\")
+    sp[-2]=mfile.split("\\")[-2]
+    filepath="\\".join(sp)
     output=open(filepath,'a',newline="")
-    macc,mangular=read(mfile)
-    sacc,sangular=read(sfile)
-    if pearson_correlation(macc[:50,0],sacc[:50,0])<0:
-        macc=-macc
+    macc=readAcc(mfile)
+    sacc=readAcc(sfile)
+    #if pearson_correlation(macc[:50,0],sacc[:50,0])<0:
+    #    macc=-macc
     output.writelines(mfile+" "+sfile+'\r\n')
     output.writelines("acceleration\r\n")
-    for i in range(1):
-        error,mfinal,sfinal=compareData(macc[:,i],sacc[:,i])
-        output.writelines("error:"+str(error)+'\r\n')
-        output.writelines('len:' + str(len(sfinal)) + '\r\n')
-        output.writelines(str(mfinal)+'\r\n')
-        output.writelines(str(sfinal)+'\r\n')
+    m_key=[]
+    s_key=[]
+    error=0
+    for i in range(3):
+        e,mfinal,sfinal=compareData(macc[:,i],sacc[:,i])
+        m_key=m_key+mfinal
+        s_key=s_key+sfinal
+        error+=e
+    output.writelines("error:"+str(error)+'\r\n')
+    output.writelines('len:' + str(len(m_key)) + '\r\n')
+    output.writelines(str(m_key)+'\r\n')
+    output.writelines(str(s_key)+'\r\n')
 
-    output.writelines("angular\r\n")
-    for i in range(1):
-        error,mfinal,sfinal=compareData(mangular[:,i],sangular[:,i])
-        output.writelines("error:"+str(error)+'\r\n')
-        output.writelines(str(mfinal)+'\r\n')
-        output.writelines(str(sfinal)+'\r\n')
 
 def comparenormal(mfile,sfile):
     m=5
@@ -147,12 +140,12 @@ def comparenormal(mfile,sfile):
     output.writelines('len:'+str(len(common))+'\r\n')
 
 def testlevelcrossing():
-    filepath=os.getcwd()+"\\data\\pca"
+    filepath=os.getcwd()+"\\data\\RMSD"
     files=os.listdir(filepath)
     #print(files)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,13):
+    for i in range(1,22):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
@@ -178,7 +171,6 @@ def testnormal():
 
 if __name__=="__main__":
     testlevelcrossing()
-    testnormal()
 
 
 

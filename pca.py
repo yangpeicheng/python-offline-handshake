@@ -3,8 +3,7 @@ import csv
 import math
 import numpy as np
 import os
-from compare import pearson_correlation
-from subData import getMagnitude
+from Utils import align,readAccelerationMatrix,shift_central
 
 def  pcaTrain(data,filename):
     pca=PCA(n_components=3)
@@ -19,14 +18,6 @@ def  pcaTrain(data,filename):
     return pca.components_
 
 def transform(data,components):
-    mean=[0,0,0]
-    for line in data:
-        for j in range(3):
-            mean[j]+=line[j]
-    mean=[mean[i]/len(data) for i in range(3)]
-    for i in range(len(data)):
-        for j in range(3):
-            data[i][j]-=mean[j]
     ans=[]
     for line in data:
         #ans.append([dot_product(line,components[0]),dot_product(line,components[1]),dot_product(line,components[2])])
@@ -34,46 +25,15 @@ def transform(data,components):
     return ans
 
 
-def readAccelerationMatrix(filename):
-    acceleration=[]
-    matrix=[]
-    with open(filename) as f:
-        reader=csv.reader(f)
-        for line in reader:
-            acceleration.append([float(line[x]) for x in range(0,3)])
-            matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
-    return acceleration,matrix
-
-def align(mfile,sfile):
-    m,mt=readAccelerationMatrix(mfile)
-    s,st=readAccelerationMatrix(sfile)
-    length = 50
-    m_magnitude=[getMagnitude(m[i]) for i in range(length*2)]
-    s_magnitude=[getMagnitude(s[i]) for i in range(length*2)]
-    m_start=0
-    s_start=0
-    correlation=0
-    for i in range(length):
-        for j in range(length):
-            tmp=pearson_correlation(m_magnitude[i:i+length],s_magnitude[j:j+length])
-            if tmp>correlation:
-                m_start=i
-                s_start=j
-                correlation=tmp
-    return m_start,s_start
-
-
-
-
-
 def getGlobalData(filename,start):
     acceleration,matrix=readAccelerationMatrix(filename)
     acceleration=acceleration[start:]
+    acceleration=shift_central(acceleration)
     matrix=matrix[start:]
     m_components=pcaTrain(acceleration,filename)
     global_acceleration=transform(acceleration,m_components)
     angular=[]
-    current=m_components
+    current=np.eye(3)
     pre=[]
     for m in matrix:
         tmp=[]
@@ -85,6 +45,7 @@ def getGlobalData(filename,start):
             s=smoothAngular(pre,s)
         pre = s
         angular.append(s)
+    angular=shift_central(angular)
     str=filename.split('\\')
     str[-2]="pca"
     outputfile="\\".join(str)
