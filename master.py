@@ -6,6 +6,7 @@ toPath=os.getcwd()+"\\data\\master"
 fromPath=os.getcwd()+"\\data\\data"
 index=0
 for filename in os.listdir(toPath):
+    print(filename)
     num=int(filename.split('.',1)[0].split('-',1)[1])
     if num>index:
         index=num

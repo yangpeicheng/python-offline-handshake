@@ -28,6 +28,7 @@ def transform(data,components):
 def getGlobalData(filename,start):
     acceleration,matrix=readAccelerationMatrix(filename)
     acceleration=acceleration[start:]
+    matrix=matrix[start:]
     acceleration=shift_central(acceleration)
     matrix=matrix[start:]
     m_components=pcaTrain(acceleration,filename)
@@ -37,7 +38,7 @@ def getGlobalData(filename,start):
     pre=[]
     for m in matrix:
         tmp=[]
-        for i in np.dot(current,m).tolist():
+        for i in np.dot(m_components,m).tolist():
             tmp=tmp+i
         print(tmp)
         s=getOrientationFromMatrix(tmp)
@@ -51,7 +52,7 @@ def getGlobalData(filename,start):
     outputfile="\\".join(str)
     output=open(outputfile,"w",newline="")
     writer=csv.writer(output)
-    for i in range(len(global_acceleration)):
+    for i in range(min(len(global_acceleration),len(angular))):
         writer.writerow(global_acceleration[i]+angular[i])
     return global_acceleration,angular
 

@@ -69,7 +69,7 @@ if __name__=="__main__":
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,22):
+    for i in range(1,26):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:

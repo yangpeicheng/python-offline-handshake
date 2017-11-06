@@ -6,6 +6,7 @@ from Utils import getMagnitude
 
 def extract(m):
     acceleration=readCompleteData(m)
+    print(m)
     start,end=findHandShake(acceleration)
     s=m.split('\\')
     s[-2]="handshake"

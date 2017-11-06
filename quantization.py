@@ -62,10 +62,10 @@ def check_levelcrossing(bits,index,m):
     for i in index:
         start=i-math.floor((m-2)/2)
         end=i+math.ceil((m-2)/2)
-        bit=bits[start]
         flag=True
-        if end>=len(bits):
+        if start>=len(bits) or end>=len(bits):
             break
+        bit = bits[start]
         for j in range(start,end+1):
             if bit!=bits[j] or bit==2:
                 flag=False
@@ -140,12 +140,12 @@ def comparenormal(mfile,sfile):
     output.writelines('len:'+str(len(common))+'\r\n')
 
 def testlevelcrossing():
-    filepath=os.getcwd()+"\\data\\RMSD"
+    filepath=os.getcwd()+"\\data\\gyro"
     files=os.listdir(filepath)
     #print(files)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,22):
+    for i in range(1,26):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
