@@ -102,6 +102,34 @@ def getOrientationFromMatrix(R):
     values.append(math.atan2(-R[6], R[8]))
     return values
 
+def matrix2quatern(R):
+    R=np.transpose(R)
+    K=np.zeros((4,4))
+    K[0, 0] = (1 / 3) * (R[0, 0] - R[1, 1] - R[2, 2])
+    K[0, 1] = (1 / 3) * (R[1, 0] + R[0, 1])
+    K[0, 2] = (1 / 3) * (R[2, 0] + R[0, 2])
+    K[0, 3] = (1 / 3) * (R[1, 2] - R[2, 1])
+    K[1, 0] = (1 / 3) * (R[1, 0] + R[0, 1])
+    K[1, 1] = (1 / 3) * (R[1, 1] - R[0, 0] - R[2, 2])
+    K[1, 2] = (1 / 3) * (R[2, 1] + R[1, 2])
+    K[1, 3] = (1 / 3) * (R[2, 0] - R[0, 2])
+    K[2, 0] = (1 / 3) * (R[2, 0] + R[0, 2])
+    K[2, 1] = (1 / 3) * (R[2, 1] + R[1, 2])
+    K[2, 2] = (1 / 3) * (R[2, 2] - R[0, 0] - R[1, 1])
+    K[2, 3] = (1 / 3) * (R[0, 1] - R[1, 0])
+    K[3, 0] = (1 / 3) * (R[1, 2] - R[2, 1])
+    K[3, 1] = (1 / 3) * (R[2, 0] - R[0, 2])
+    K[3, 2] = (1 / 3) * (R[0, 1] - R[1, 0])
+    K[3, 3] = (1 / 3) * (R[0, 0] + R[1, 1] + R[2, 2])
+    [v,d]=np.linalg.eig(K)
+    print(v)
+    q=v[:4]
+    return q
+
+def matrix2axis(R):
+    return [R[2,1]-R[1,2],R[0,2]-R[2,0],R[1,0]-R[0,1]]
+
+
 def smoothAngular(pre,current):
     result=[]
     print(pre,current)
@@ -114,20 +142,27 @@ def smoothAngular(pre,current):
             result.append(current[i])
     return result
 
+
 def calcGyro(R,matrix,p):
     gyro=[]
     pre=p.copy()
     for m in matrix:
-        t=np.dot(R,m).tolist()
-        tt=[]
-        for i in t:
-            tt.extend(i)
-        s=getOrientationFromMatrix(tt)
-        if len(pre)>0:
-            s=smoothAngular(pre,s)
-        pre=s
-        gyro.append(s)
-    return shift_central(gyro)
+        '''       t=np.dot(R,m).tolist()
+               tt=[]
+               for i in t:
+                   tt.extend(i)
+               s=getOrientationFromMatrix(tt)
+               if len(pre)>0:
+                   s=smoothAngular(pre,s)
+               pre=s
+               gyro.append(s)
+           return shift_central(gyro)'''
+        t=np.dot(R,m)
+        q=matrix2axis(t)
+        gyro.append(q)
+    return gyro
+
+
 
 def rotationByQuaternion(m,s):
     m_a, m_matrix = readAccelerationMatrix(m)
