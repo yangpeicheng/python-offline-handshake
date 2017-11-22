@@ -48,6 +48,18 @@ def readAccelerationMatrix(filename):
             matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
     return acceleration,matrix
 
+def readAccMatGyro(filename):
+    acceleration=[]
+    matrix=[]
+    gyro=[]
+    with open(filename) as f:
+        reader=csv.reader(f)
+        for line in reader:
+            acceleration.append([float(line[x]) for x in range(0,3)])
+            matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
+            gyro.append([float(line[x]) for x in range(12,15)])
+    return acceleration,matrix,gyro
+
 def shift_central(m):
     s=[0 for i in range(3)]
     for i in range(len(m)):
