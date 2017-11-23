@@ -140,7 +140,7 @@ def comparenormal(mfile,sfile):
     output.writelines('len:'+str(len(common))+'\r\n')
 
 def testlevelcrossing():
-    filepath=os.getcwd()+"\\data\\gyro"
+    filepath=os.getcwd()+"\\data\\GyroSpherical"
     files=os.listdir(filepath)
     #print(files)
     master="masterlocal"

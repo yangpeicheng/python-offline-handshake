@@ -90,7 +90,7 @@ def instanceOfCompare():
             compare(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
 
 if __name__=="__main__":
-    filepath = os.getcwd() + "\\data\\gyro"
+    filepath = os.getcwd() + "\\data\\GyroSpherical"
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"

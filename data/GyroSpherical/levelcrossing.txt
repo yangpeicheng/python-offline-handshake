@@ -1,0 +1,150 @@
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-1.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-1.csv
+acceleration
+error:0.0
+len:27
+[1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+[1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-2.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-2.csv
+acceleration
+error:0.0
+len:33
+[0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-3.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-3.csv
+acceleration
+error:8.0
+len:40
+[0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0]
+[0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-4.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-4.csv
+acceleration
+error:8.0
+len:40
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-5.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-5.csv
+acceleration
+error:7.0
+len:47
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-6.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-6.csv
+acceleration
+error:3.0
+len:38
+[0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+[0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-7.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-7.csv
+acceleration
+error:1.0
+len:31
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-8.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-8.csv
+acceleration
+error:5.0
+len:24
+[0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0]
+[0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-9.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-9.csv
+acceleration
+error:1.0
+len:13
+[0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+[0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-10.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-10.csv
+acceleration
+error:0.0
+len:14
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-11.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-11.csv
+acceleration
+error:0.0
+len:19
+[0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1]
+[0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-12.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-12.csv
+acceleration
+error:3.0
+len:15
+[0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+[0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-13.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-13.csv
+acceleration
+error:8.0
+len:24
+[1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0]
+[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-14.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-14.csv
+acceleration
+error:11.0
+len:45
+[0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0]
+[0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-15.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-15.csv
+acceleration
+error:9.0
+len:49
+[0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1]
+[0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-16.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-16.csv
+acceleration
+error:12.0
+len:29
+[0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0]
+[0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-17.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-17.csv
+acceleration
+error:10.0
+len:25
+[0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+[0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-18.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-18.csv
+acceleration
+error:5.0
+len:16
+[0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+[0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-19.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-19.csv
+acceleration
+error:3.0
+len:12
+[1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-20.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-20.csv
+acceleration
+error:1.0
+len:17
+[0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0]
+[0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-21.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-21.csv
+acceleration
+error:0.0
+len:20
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-22.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-22.csv
+acceleration
+error:8.0
+len:30
+[1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+[0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-23.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-23.csv
+acceleration
+error:6.0
+len:24
+[0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0]
+[0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-24.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-24.csv
+acceleration
+error:21.0
+len:47
+[0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1]
+[0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1]
+F:\PythonProject\python-offline-handshake\data\GyroSpherical\masterlocal-25.csv F:\PythonProject\python-offline-handshake\data\GyroSpherical\slavelocal-25.csv
+acceleration
+error:0.0
+len:38
+[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1]
+[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1]

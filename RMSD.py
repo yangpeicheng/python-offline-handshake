@@ -79,7 +79,7 @@ def calcR(X,Y):
 
 def output(file,data):
     str=file.split('\\')
-    str[-2]="Spherical"
+    str[-2]="GyroSpherical"
     outputfile="\\".join(str)
     with open(outputfile,'w',newline="") as f:
         out=csv.writer(f)
@@ -266,11 +266,13 @@ def splitRotate(m,s):
         train_start+=split_gap
     #output(m, m_translated_acc)
     #output(s, s_a.transpose().tolist())
-    output(m,Cartesian2Spherical(m_translated_acc))
-    output(s,Cartesian2Spherical(s_a.transpose().tolist()))
+    #output(m,Cartesian2Spherical(m_translated_acc))
+    #output(s,Cartesian2Spherical(s_a.transpose().tolist()))
     outputGyro(m,m_translated_gyro)
     sgyro = calcGyro(np.eye(3), s_matrix,[0,0,0])
     outputGyro(s,s_gyro.transpose().tolist())
+    output(m,Cartesian2Spherical(m_translated_gyro))
+    output(s,Cartesian2Spherical(s_gyro.transpose().tolist()))
 
 #笛卡尔坐标向球坐标的转化
 def Cartesian2Spherical(data):
