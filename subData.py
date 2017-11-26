@@ -38,8 +38,8 @@ def init(data):
 #data ---acceleration data
 def findHandShake(data):
     magnitude,variance=init(data)
-    MAGNITUDE_THRESHOLD = 1.5
-    VARIANCE_THRESHOLD = 0.2
+    MAGNITUDE_THRESHOLD = 0.5   #1.5
+    VARIANCE_THRESHOLD = 0.05   #0.2
     preState=True
     downIndex=[]
     upIndex=[]
@@ -51,6 +51,7 @@ def findHandShake(data):
             upIndex.append(i)
         preState=currentState
     i=0
+    upIndex.append(len(magnitude))
     print(downIndex)
     print(upIndex)
     while i<min(len(upIndex),len(downIndex)-1):

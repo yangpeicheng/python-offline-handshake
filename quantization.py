@@ -140,12 +140,12 @@ def comparenormal(mfile,sfile):
     output.writelines('len:'+str(len(common))+'\r\n')
 
 def testlevelcrossing():
-    filepath=os.getcwd()+"\\data\\GyroSpherical"
+    filepath=os.getcwd()+"\\data\\adaptive"
     files=os.listdir(filepath)
     #print(files)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,26):
+    for i in range(1,30):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:

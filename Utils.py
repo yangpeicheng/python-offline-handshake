@@ -38,6 +38,14 @@ def getMagnitude(data):
         sum+=i*i
     return math.sqrt(sum)
 
+def readAcc(filename):
+    acceleration=[]
+    with open(filename) as f:
+        reader=csv.reader(f)
+        for line in reader:
+            acceleration.append([float(line[x]) for x in range(0,3)])
+    return acceleration
+
 def readAccelerationMatrix(filename):
     acceleration=[]
     matrix=[]
@@ -47,6 +55,16 @@ def readAccelerationMatrix(filename):
             acceleration.append([float(line[x]) for x in range(0,3)])
             matrix.append(np.mat([float(line[x]) for x in range(3,12)]).reshape(3,3))
     return acceleration,matrix
+
+def readAccGyro(filename):
+    acceleration=[]
+    gyro=[]
+    with open(filename) as f:
+        reader=csv.reader(f)
+        for line in reader:
+            acceleration.append([float(line[x]) for x in range(0,3)])
+            gyro.append([float(line[x]) for x in range(12,15)])
+    return acceleration,gyro
 
 def readAccMatGyro(filename):
     acceleration=[]

@@ -1,7 +1,9 @@
 import numpy as np
 import os
 import csv
-from Utils import readAccelerationMatrix,align,shift_central,readAccMatGyro
+from Utils import readAccelerationMatrix,shift_central,readAccMatGyro,getMagnitude,readAcc,readAccGyro
+from Utils import align as al
+from time_alignment import align
 from matplotlib import pyplot as plt
 import math
 
@@ -79,7 +81,8 @@ def calcR(X,Y):
 
 def output(file,data):
     str=file.split('\\')
-    str[-2]="GyroSpherical"
+    #str[-2]="RMSD"
+    str[-2]="AccSpherical"
     outputfile="\\".join(str)
     with open(outputfile,'w',newline="") as f:
         out=csv.writer(f)
@@ -88,7 +91,8 @@ def output(file,data):
 
 def outputGyro(file,data):
     str=file.split('\\')
-    str[-2]="gyro"
+    #str[-2]="gyro"
+    str[-2]="GyroSpherical"
     outputfile="\\".join(str)
     with open(outputfile,'w',newline="") as f:
         out=csv.writer(f)
@@ -227,7 +231,7 @@ def splitRotate(m,s):
     s_a, s_matrix,s_gyro = readAccMatGyro(s)
     m_a = shift_central(m_a)
     s_a = shift_central(s_a)
-    m_start, s_start = align(m, s)
+    m_start, s_start = al(m, s)
     m_a = np.array(m_a[m_start:]).transpose()
     s_a = np.array(s_a[s_start:]).transpose()
     m_matrix=m_matrix[m_start:]
@@ -264,28 +268,66 @@ def splitRotate(m,s):
         R_gyro = calcR(train_m_a_gyro, train_s_a_gyro)
         m_translated_gyro.extend(np.dot(R_gyro,m_gyro[:,train_start:end]).transpose().tolist())
         train_start+=split_gap
-    #output(m, m_translated_acc)
-    #output(s, s_a.transpose().tolist())
+    output(m, m_translated_acc)
+    output(s, s_a.transpose().tolist())
     #output(m,Cartesian2Spherical(m_translated_acc))
     #output(s,Cartesian2Spherical(s_a.transpose().tolist()))
-    outputGyro(m,m_translated_gyro)
-    sgyro = calcGyro(np.eye(3), s_matrix,[0,0,0])
-    outputGyro(s,s_gyro.transpose().tolist())
-    output(m,Cartesian2Spherical(m_translated_gyro))
-    output(s,Cartesian2Spherical(s_gyro.transpose().tolist()))
+    #outputGyro(m,m_translated_gyro)
+    #sgyro = calcGyro(np.eye(3), s_matrix,[0,0,0])
+    #outputGyro(s,s_gyro.transpose().tolist())
+    #output(m,Cartesian2Spherical(m_translated_gyro))
+    #output(s,Cartesian2Spherical(s_gyro.transpose().tolist()))
+
+def RMSD(m_a,s_a):
+    m_a = shift_central(m_a)
+    s_a = shift_central(s_a)
+    m_magnitude=[getMagnitude(m_a[i]) for i in range(len(m_a))]
+    s_magnitude=[getMagnitude(s_a[i]) for i in range(len(s_a))]
+    le=100
+    m_start, s_start = align(m_magnitude[0:le], s_magnitude[0:le])
+    m_a = np.array(m_a[m_start:]).transpose()
+    s_a = np.array(s_a[s_start:]).transpose()
+    if m_a.shape[1] > s_a.shape[1]:
+        l = s_a.shape[1]
+    else:
+        l = m_a.shape[1]
+    m_a = m_a[:,:l]
+    s_a = s_a[:,:l]
+
+    split_gap=100
+    train_num=20
+    train_start=0
+    m_translated_acc=[]
+
+    while train_start<l:
+        train_m_a = m_a[:, train_start:min(train_start+train_num,l)]
+        train_s_a = s_a[:, train_start:min(train_start+train_num,l)]
+        end=min(l,train_start+split_gap)
+        R=calcR(train_m_a,train_s_a)
+        m_translated_acc.extend(np.dot(R,m_a[:,train_start:end]).transpose().tolist())
+        train_start+=split_gap
+
+    return m_translated_acc,s_a.transpose().tolist()
 
 #笛卡尔坐标向球坐标的转化
 def Cartesian2Spherical(data):
     result=[]
-    last=[]
     for i in data:
         r=np.linalg.norm(i)
         theta=np.arccos(i[2]/r)
         fi=np.arctan(i[1]/i[0])
         result.append([r,theta,fi])
-        last=[r,theta,fi]
     return result
 
+def test(m,s):
+    m_a,m_g=readAccGyro(m)
+    s_a,s_g=readAccGyro(s)
+    tm,ts=RMSD(m_a,s_a)
+    output(m,Cartesian2Spherical(tm))
+    output(s,Cartesian2Spherical(ts))
+    tmg,tsg=RMSD(m_g,s_g)
+    outputGyro(m,Cartesian2Spherical(tmg))
+    outputGyro(s,Cartesian2Spherical(tsg))
 
 
 def main_test():
@@ -294,13 +336,14 @@ def main_test():
     master="masterlocal"
     slave="slavelocal"
 
-    for i in range(1,26):
+    for i in range(1,40):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
             m=os.path.join(filepath,mfile)
             s=os.path.join(filepath,sfile)
-            splitRotate(m,s)
+            print(m)
+            test(m,s)
 
 if __name__=="__main__":
     main_test()
