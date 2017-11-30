@@ -89,13 +89,23 @@ def instanceOfCompare():
         if mfile in files and sfile in files:
             compare(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
 
-if __name__=="__main__":
-    filepath = os.getcwd() + "\\data\\AdaptiveGyroSph"
+def test_single(file):
+    filepath = os.getcwd() + "\\data\\"+file
     files=os.listdir(filepath)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,40):
+    for i in range(1,45):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
+            print(mfile)
             compareAcc(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
+if __name__=="__main__":
+    test_single("RMSD")
+    test_single("gyro")
+    test_single("AccSpherical")
+    test_single("GyroSpherical")
+    test_single("AdaptiveAcc")
+    test_single("AdaptiveAccSph")
+    test_single("AdaptiveGyro")
+    test_single("AdaptiveGyroSph")

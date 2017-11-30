@@ -20,8 +20,8 @@ def adaptive_train(master_raw,slave_raw):
 
     master_index=0
     slave_index=0
-    k=1
-    interval=100
+    k=2
+    interval=50
     train_size=interval
     master_len=len(m_magnitude)
     slave_len=len(s_magnitude)
@@ -31,7 +31,15 @@ def adaptive_train(master_raw,slave_raw):
     translated_master=[]
     translated_slave=[]
     count=0
+
+    first=True
     while True:
+        if first:
+            train_size=100
+            first=False
+        else:
+            train_size=20
+
         master_end=master_index+train_size
         slave_end=slave_index+train_size
 
@@ -43,7 +51,7 @@ def adaptive_train(master_raw,slave_raw):
         count += 1
         m_start,s_start=align(m_magnitude[master_index:master_end],s_magnitude[slave_index:slave_end])
 
-        if abs(m_start-s_start)>5:
+        if abs(m_start-s_start)>2:
             k=1
             master_index+=m_start
             slave_index+=s_start
@@ -72,60 +80,64 @@ def adaptive_train(master_raw,slave_raw):
 
     #compareGraph(master_raw,slave_raw)
     #compareGraph(translated_master,translated_slave)
-    print(count*train_size)
+    print(count*train_size/len(master_raw))
     return translated_master,translated_slave
 
-def compareGraph(master,slave):
+def compareGraph(master,slave,label,f):
     plt.figure()
     plt.subplot(311)
     #print([master[i][0] for i in range(len(master))])
     labels=["device 1","device 2"]
     plt.plot([master[i][0] for i in range(len(master))],color='r')
     plt.plot([slave[i][0] for i in range(len(slave))],color='b')
-    plt.ylabel("x")
-    plt.legend(labels)
+    plt.ylabel(label[0])
+    plt.legend(labels, fontsize=8)
     plt.subplot(312)
     plt.plot([master[i][1] for i in range(len(master))],color='r')
     plt.plot([slave[i][1] for i in range(len(slave))],color='b')
-    plt.ylabel("y")
-    plt.legend(labels)
+    plt.ylabel(label[1])
+    plt.legend(labels, fontsize=8)
     plt.subplot(313)
     plt.plot([master[i][2] for i in range(len(master))],color='r')
     plt.plot([slave[i][2] for i in range(len(slave))],color='b')
-    plt.ylabel("z")
+    plt.ylabel(label[2])
     plt.xlabel("sample")
-    plt.legend(labels)
-    plt.show()
+    plt.legend(labels, fontsize=8)
 
-def graphFromFile(m,s):
+
+    plt.savefig(f)
+    plt.clf()
+    #plt.show()
+
+def graphFromFile(m,s,label=["x","y","z"]):
     master=readAcc(m)
     slave=readAcc(s)
-    compareGraph(master,slave)
+    f=m.split("\\")
+    num=f[-1].split("-")[1].split(".")[0]
+    f[-1]="picture"+"\\"+num+".jpg"
+    figurename="\\".join(f)
+    compareGraph(master,slave,label,figurename)
 
 def test(masterfile,slavefile):
     m_a,m_g=readAccGyro(masterfile)
     s_a,s_g=readAccGyro(slavefile)
 
     tm,ts=adaptive_train(m_a,s_a)
-    output(masterfile,Cartesian2Spherical(tm))
-    output(slavefile,Cartesian2Spherical(ts))
+    output(masterfile,tm,"AdaptiveAcc")
+    output(slavefile,ts,"AdaptiveAcc")
+    output(masterfile,Cartesian2Spherical(tm),"AdaptiveAccSph")
+    output(slavefile,Cartesian2Spherical(ts),"AdaptiveAccSph")
     tmg,tsg=adaptive_train(m_g,s_g)
-    outputGyro(masterfile,Cartesian2Spherical(tmg))
-    outputGyro(slavefile,Cartesian2Spherical(tsg))
+    output(masterfile,tmg,"AdaptiveGyro")
+    output(slavefile,tsg,"AdaptiveGyro")
+    output(masterfile,Cartesian2Spherical(tmg),"AdaptiveGyroSph")
+    output(slavefile,Cartesian2Spherical(tsg),"AdaptiveGyroSph")
     return tm,ts
 
-def output(file,data):
+def output(file,data,f):
     str=file.split('\\')
-    str[-2]="AdaptiveAccSph"
-    outputfile="\\".join(str)
-    with open(outputfile,'w',newline="") as f:
-        out=csv.writer(f)
-        for i in data:
-            out.writerow(i)
-
-def outputGyro(file,data):
-    str=file.split('\\')
-    str[-2]="AdaptiveGyroSph"
+    str[-2]=f
+    #str[-2]="AdaptiveAcc"
     outputfile="\\".join(str)
     with open(outputfile,'w',newline="") as f:
         out=csv.writer(f)
@@ -138,7 +150,7 @@ def main_test():
     master="masterlocal"
     slave="slavelocal"
 
-    for i in range(1,40):
+    for i in range(1,45):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
@@ -146,10 +158,25 @@ def main_test():
             s=os.path.join(filepath,sfile)
             test(m,s)
 
+def batchGraph(file):
+    filepath = os.getcwd() + "\\data\\"+file
+    files=os.listdir(filepath)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,45):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            print(mfile)
+            graphFromFile(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
+
 if __name__=="__main__":
     '''m,s=test(".\\data\\transform\\masterlocal-29.csv",".\\data\\transform\\slavelocal-29.csv")
     compareGraph(m,s)
     graphFromFile(".\\data\\RMSD\\masterlocal-29.csv",".\\data\\RMSD\\slavelocal-29.csv")'''
+    #test(".\\data\\transform\\masterlocal-33.csv",".\\data\\transform\\slavelocal-33.csv")
     main_test()
-    #graphFromFile(".\\data\\RMSD\\masterlocal-29.csv", ".\\data\\RMSD\\slavelocal-29.csv")
-    #graphFromFile(".\\data\\adaptive\\masterlocal-29.csv", ".\\data\\adaptive\\slavelocal-29.csv")
+    batchGraph("AdaptiveAccSph")
+    #batchGraph("AdaptiveAcc")
+    batchGraph("AdaptiveGyroSph")
+    #batchGraph("AdaptiveGyro")

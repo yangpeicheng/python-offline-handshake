@@ -21,7 +21,59 @@ def time_alignment(master,slave):
     slave_index=0
     k=2
     interval=50
-    train_size=interval
+    master_len=len(master)
+    slave_len=len(slave)
+
+    aligned_master=[]
+    aligned_slave=[]
+
+    first=True
+    while True:
+        if first:
+            train_size=75
+            first=False
+        else:
+            train_size=20
+        master_end=master_index+train_size
+        slave_end=slave_index+train_size
+        if master_end>=master_len or slave_end>=slave_len:
+
+            l=min(master_end-master_index,master_len-master_index,slave_end-slave_index,slave_len-slave_index)
+            aligned_master.extend(master[master_index:master_index+l])
+            aligned_slave.extend(slave[slave_index:slave_index+l])
+            break
+
+        m_start,s_start=align(master[master_index:master_end],slave[slave_index:slave_end])
+        print(m_start,s_start)
+        #if m_start>2 or s_start>2:
+        if abs(m_start-s_start)>2:
+            k=1
+            master_index+=m_start
+            slave_index+=s_start
+        else:
+            k+=1
+            #train_size=max(int(train_size/4),10)
+        #print(k,train_size)
+        if master_index>=master_len or slave_index>=slave_len:
+            break
+        l = min(k * interval, master_len - master_index, slave_len - slave_index)
+        aligned_master.extend(master[master_index:master_index+l])
+        aligned_slave.extend(slave[slave_index:slave_index+l])
+        #print("len", len(aligned_master), len(aligned_slave))
+
+        master_index=min(master_index+k*interval,master_len)
+        slave_index=min(slave_index+k*interval,slave_len)
+        #print(master_index,slave_index)
+
+    print(pearson_correlation(aligned_master,aligned_slave))
+
+    return aligned_master,aligned_slave
+
+def period_alignment(master,slave):
+    master_index=0
+    slave_index=0
+    interval=300
+    train_size=100
     master_len=len(master)
     slave_len=len(slave)
 
@@ -43,22 +95,19 @@ def time_alignment(master,slave):
         print(m_start,s_start)
         #if m_start>2 or s_start>2:
         if abs(m_start-s_start)>2:
-            k=2
             master_index+=m_start
             slave_index+=s_start
-        else:
-            k+=1
             #train_size=max(int(train_size/4),10)
-        print(k,train_size)
+        #print(k,train_size)
         if master_index>=master_len or slave_index>=slave_len:
             break
-        l = min(k * interval, master_len - master_index, slave_len - slave_index)
+        l = min( interval, master_len - master_index, slave_len - slave_index)
         aligned_master.extend(master[master_index:master_index+l])
         aligned_slave.extend(slave[slave_index:slave_index+l])
-        print("len", len(aligned_master), len(aligned_slave))
+        #print("len", len(aligned_master), len(aligned_slave))
 
-        master_index=min(master_index+k*interval,master_len)
-        slave_index=min(slave_index+k*interval,slave_len)
+        master_index=min(master_index+interval,master_len)
+        slave_index=min(slave_index+interval,slave_len)
         #print(master_index,slave_index)
 
     print(pearson_correlation(aligned_master,aligned_slave))
@@ -81,7 +130,7 @@ def magnitudeGraph(aligned_master,aligned_slave,master,slave):
     #plt.legend(label)
     plt.show()
 
-def test(master,slave):
+def test(master,slave,m,s):
     master_acc=readAcc(master)
     slave_acc=readAcc(slave)
     master_acc=shift_central(master_acc)
@@ -91,8 +140,7 @@ def test(master,slave):
     print("pearson",pearson_correlation(m_magnitude,s_magnitude))
     align_master,align_slave=time_alignment(m_magnitude,s_magnitude)
 
-    m=readAcc(".\\data\\RMSD\\masterlocal-19.csv")
-    s=readAcc(".\\data\\RMSD\\slavelocal-19.csv")
+
     mm=[getMagnitude(m[i]) for i in range(len(m))]
     sm=[getMagnitude(s[i]) for i in range(len(s))]
     print("pearson", pearson_correlation(mm, sm))
@@ -100,4 +148,7 @@ def test(master,slave):
 
 
 if __name__=="__main__":
-    test(".\\data\\transform\\masterlocal-19.csv",".\\data\\transform\\slavelocal-19.csv")
+    num=str(14)
+    m=readAcc(".\\data\\RMSD\\masterlocal-"+num+".csv")
+    s=readAcc(".\\data\\RMSD\\slavelocal-"+num+".csv")
+    test(".\\data\\transform\\masterlocal-"+num+".csv",".\\data\\transform\\slavelocal-"+num+".csv",m,s)

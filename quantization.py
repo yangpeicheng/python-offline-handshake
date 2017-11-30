@@ -90,17 +90,17 @@ def compareData(mdata,sdata):
 
 
 def compareByLevelcrossing(mfile,sfile):
-    filepath = os.getcwd() + "\\data\\pca\\levelcrossing.txt"
+    filepath = os.getcwd() + "\\data\\pca\\levelcrossing.csv"
     sp=filepath.split("\\")
     sp[-2]=mfile.split("\\")[-2]
     filepath="\\".join(sp)
     output=open(filepath,'a',newline="")
+    writer=csv.writer(output)
     macc=readAcc(mfile)
     sacc=readAcc(sfile)
-    #if pearson_correlation(macc[:50,0],sacc[:50,0])<0:
-    #    macc=-macc
+    '''
     output.writelines(mfile+" "+sfile+'\r\n')
-    output.writelines("acceleration\r\n")
+    output.writelines("acceleration\r\n")'''
     m_key=[]
     s_key=[]
     error=0
@@ -109,10 +109,11 @@ def compareByLevelcrossing(mfile,sfile):
         m_key=m_key+mfinal
         s_key=s_key+sfinal
         error+=e
-    output.writelines("error:"+str(error)+'\r\n')
+    '''output.writelines("error:"+str(error)+'\r\n')
     output.writelines('len:' + str(len(m_key)) + '\r\n')
     output.writelines(str(m_key)+'\r\n')
-    output.writelines(str(s_key)+'\r\n')
+    output.writelines(str(s_key)+'\r\n')'''
+    writer.writerow([len(m_key),len(m_key)/len(macc),error/len(m_key)])
 
 
 def comparenormal(mfile,sfile):
@@ -139,13 +140,13 @@ def comparenormal(mfile,sfile):
     output.writelines('error:'+str(counter/len(common))+'\r\n')
     output.writelines('len:'+str(len(common))+'\r\n')
 
-def testlevelcrossing():
-    filepath=os.getcwd()+"\\data\\adaptive"
+def testlevelcrossing(file):
+    filepath=os.getcwd()+"\\data\\"+file
     files=os.listdir(filepath)
     #print(files)
     master="masterlocal"
     slave="slavelocal"
-    for i in range(1,30):
+    for i in range(1,45):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
@@ -170,7 +171,14 @@ def testnormal():
             comparenormal(mfilename,sfilename)
 
 if __name__=="__main__":
-    testlevelcrossing()
+    #testlevelcrossing("RMSD")
+    #testlevelcrossing("gyro")
+    #testlevelcrossing("AccSpherical")
+    #testlevelcrossing("GyroSpherical")
+    testlevelcrossing("AdaptiveAcc")
+    testlevelcrossing("AdaptiveAccSph")
+    testlevelcrossing("AdaptiveGyro")
+    testlevelcrossing("AdaptiveGyroSph")
 
 
 

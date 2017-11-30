@@ -79,20 +79,10 @@ def calcR(X,Y):
     return np.dot(np.dot(wt.transpose(),mid),v.transpose())
 
 
-def output(file,data):
+def output(file,data,f):
     str=file.split('\\')
-    #str[-2]="RMSD"
-    str[-2]="AccSpherical"
-    outputfile="\\".join(str)
-    with open(outputfile,'w',newline="") as f:
-        out=csv.writer(f)
-        for i in data:
-            out.writerow(i)
-
-def outputGyro(file,data):
-    str=file.split('\\')
-    #str[-2]="gyro"
-    str[-2]="GyroSpherical"
+    str[-2]=f
+    #str[-2]="AccSpherical"
     outputfile="\\".join(str)
     with open(outputfile,'w',newline="") as f:
         out=csv.writer(f)
@@ -218,10 +208,10 @@ def rotationByMatrix(m,s):
     translated=np.dot(R,m_a).transpose().tolist()
     gyro=calcGyro(R,m_matrix)
     sgyro=calcGyro(np.eye(3),s_matrix)
-    output(m, translated)
+    '''output(m, translated)
     output(s, s_a.transpose().tolist())
     outputGyro(m,gyro)
-    outputGyro(s,sgyro)
+    outputGyro(s,sgyro)'''
 
 #求解旋转矩阵 分段训练
 def splitRotate(m,s):
@@ -268,8 +258,8 @@ def splitRotate(m,s):
         R_gyro = calcR(train_m_a_gyro, train_s_a_gyro)
         m_translated_gyro.extend(np.dot(R_gyro,m_gyro[:,train_start:end]).transpose().tolist())
         train_start+=split_gap
-    output(m, m_translated_acc)
-    output(s, s_a.transpose().tolist())
+    '''output(m, m_translated_acc)
+    output(s, s_a.transpose().tolist())'''
     #output(m,Cartesian2Spherical(m_translated_acc))
     #output(s,Cartesian2Spherical(s_a.transpose().tolist()))
     #outputGyro(m,m_translated_gyro)
@@ -283,7 +273,7 @@ def RMSD(m_a,s_a):
     s_a = shift_central(s_a)
     m_magnitude=[getMagnitude(m_a[i]) for i in range(len(m_a))]
     s_magnitude=[getMagnitude(s_a[i]) for i in range(len(s_a))]
-    le=100
+    le=75
     m_start, s_start = align(m_magnitude[0:le], s_magnitude[0:le])
     m_a = np.array(m_a[m_start:]).transpose()
     s_a = np.array(s_a[s_start:]).transpose()
@@ -295,7 +285,7 @@ def RMSD(m_a,s_a):
     s_a = s_a[:,:l]
 
     split_gap=100
-    train_num=20
+    train_num=25
     train_start=0
     m_translated_acc=[]
 
@@ -314,8 +304,8 @@ def Cartesian2Spherical(data):
     result=[]
     for i in data:
         r=np.linalg.norm(i)
-        theta=np.arccos(i[2]/r)
-        fi=np.arctan(i[1]/i[0])
+        theta=np.arccos((i[2])/(r))
+        fi=np.arctan((i[1])/(i[0]))
         result.append([r,theta,fi])
     return result
 
@@ -323,11 +313,15 @@ def test(m,s):
     m_a,m_g=readAccGyro(m)
     s_a,s_g=readAccGyro(s)
     tm,ts=RMSD(m_a,s_a)
-    output(m,Cartesian2Spherical(tm))
-    output(s,Cartesian2Spherical(ts))
+    output(m,tm,"RMSD")
+    output(s,ts,"RMSD")
+    output(m,Cartesian2Spherical(tm),"AccSpherical")
+    output(s,Cartesian2Spherical(ts),"AccSpherical")
     tmg,tsg=RMSD(m_g,s_g)
-    outputGyro(m,Cartesian2Spherical(tmg))
-    outputGyro(s,Cartesian2Spherical(tsg))
+    output(m,tmg,"gyro")
+    output(s,tsg,"gyro")
+    output(m,Cartesian2Spherical(tmg),"GyroSpherical")
+    output(s,Cartesian2Spherical(tsg),"GyroSpherical")
 
 
 def main_test():
@@ -336,7 +330,7 @@ def main_test():
     master="masterlocal"
     slave="slavelocal"
 
-    for i in range(1,40):
+    for i in range(1,45):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
