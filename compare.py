@@ -45,7 +45,7 @@ def compareAcc(m,s):
     filename="\\".join(sp)
     m_acc=readAcc(m)
     s_acc=readAcc(s)
-    acc_correlation=[float(np.corrcoef(np.ravel(m_acc[:,i]),np.ravel(s_acc[:,i]))[0,1]) for i in range(3)]
+    acc_correlation=[pearson_correlation(m_acc[:,i],s_acc[:,i]) for i in range(3)]
     num=(m.split('-')[-1]).split('.')[0]
     with open(filename,'a',newline="") as f:
         '''
@@ -75,7 +75,7 @@ def inner_cor(data):
     cor=[]
     for i in range(col-1):
         for j in range(i+1,col):
-            cor.append(float(np.corrcoef(np.ravel(data[:,i]),np.ravel(data[:,j]))[0,1]))
+            cor.append(pearson_correlation(data[:,i],data[:,j]))
     return cor
 
 def instanceOfCompare():
@@ -101,10 +101,10 @@ def test_single(file):
             print(mfile)
             compareAcc(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
 if __name__=="__main__":
-    test_single("RMSD")
-    test_single("gyro")
-    test_single("AccSpherical")
-    test_single("GyroSpherical")
+    #test_single("RMSD")
+    #test_single("gyro")
+    #test_single("AccSpherical")
+    #test_single("GyroSpherical")
     test_single("AdaptiveAcc")
     test_single("AdaptiveAccSph")
     test_single("AdaptiveGyro")

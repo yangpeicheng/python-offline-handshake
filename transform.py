@@ -22,6 +22,8 @@ def handler(m):
     gyroscope=[]
     current=np.eye(3)
     last_timestamp=0
+    gravity=[]
+    first=True
     with open(m) as f:
         reader=csv.reader(f)
         for line in reader:
@@ -29,12 +31,23 @@ def handler(m):
             if last_timestamp>0 and time!=last_timestamp:
                 gyro=np.array([float(line[i]) for i in range(9,12)])
                 lineacc=np.array([float(line[i]) for i in range(3,6)]).transpose()
-                #g=[float(line[i]) for i in range(9,12)]
+                g=[float(line[i]) for i in range(6,9)]
                 dt=(time-last_timestamp)*NS2S
+                '''if first:
+                    norm_g=np.array(g)/np.linalg.norm(g)
+                    fi=np.pi/2-math.atan2(math.sqrt(norm_g[0]*norm_g[0]+norm_g[1]*norm_g[1]),norm_g[2])
+                    x=np.array([math.sin(fi),0,math.cos(fi)])
+                    y=np.cross(norm_g,x)
+                    current[0,:]=x
+                    current[1,:]=y
+                    current[2,:]=norm_g
+                else:'''
                 current=updateMatrix(current,gyro,dt)
+
                 acceleration.append(np.dot(current,lineacc).tolist())
                 matrix.append(current.tolist())
                 gyroscope.append(np.dot(current,gyro).tolist())
+                gravity.append(g)
             last_timestamp=time
     s=m.split('\\')
     s[-2]="transform"
@@ -46,7 +59,7 @@ def handler(m):
             for j in range(3):
                 tmp=tmp+matrix[i][j]
             tmp=tmp+gyroscope[i]
-            writer.writerow(acceleration[i]+tmp)
+            writer.writerow(acceleration[i]+tmp+gravity[i])
     return acceleration,matrix
 
 def instanceOfTransform():

@@ -305,7 +305,8 @@ def Cartesian2Spherical(data):
     for i in data:
         r=np.linalg.norm(i)
         theta=np.arccos((i[2])/(r))
-        fi=np.arctan((i[1])/(i[0]))
+        fi=np.arctan((i[1]+20)/(i[0]+20))
+        #fi = np.arctan((i[1]) / (i[0] ))
         result.append([r,theta,fi])
     return result
 

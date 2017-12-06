@@ -1,0 +1,1 @@
+ time_alignment_compare('.\BeginAlign\masterlocal-14.csv','.\AdaptiveAlign\masterlocal-14.csv','.\BeginAlign\slavelocal-14.csv','.\AdaptiveAlign\slavelocal-14.csv')

@@ -1,9 +1,8 @@
-function plotBar(masterfile,slavefile)
-
+function plotBar(masterfile,slavefile,lab,varargin)
     M=csvread(masterfile);
     S=csvread(slavefile);
-    tm=M(40:end,:)
-    ts=M(40:end,:)
+    tm=M(40:end,:);
+    ts=S(40:end,:);
     fM=[tm ;M(26:39,:)];
     fS=[ts ;S(26:39,:)];
     Mx=fM(:,1)';
@@ -16,21 +15,27 @@ function plotBar(masterfile,slavefile)
     figure(1);
     subplot(3,1,1);
     bar([Mx;Sx]','group');
-    ylabel('len(bits)');
+    ylabel(lab{1});
+    axis([0,20,-1,1]);
+    %ylabel('axis-1 axis-2');
     %ylabel('axis-1');
-    legend('Cartesian','Spherical')
+    legend(varargin)
     set(gca,'Fontsize',5);
     subplot(3,1,2);
     bar([My;Sy]','group');
-    ylabel('len(bits)/len(data)');
+    ylabel(lab{2});
+    axis([0,20,-1,1]);
+    %ylabel('axis1 axis-3');
     %ylabel('axis-2');
-    legend('Cartesian','Spherical')
+    legend(varargin)
     set(gca,'Fontsize',5);
     subplot(3,1,3);
     bar([Mz;Sz]','group');
-    ylabel('error/len(bits)');
+    ylabel(lab{3});
+    %ylabel('axis-2 axis-3');
     %ylabel('axis-3');
-    legend('Cartesian','Spherical')
+    legend(varargin)
+    axis([0,20,-1,1]);
     set(gca,'Fontsize',5);
 end
     
