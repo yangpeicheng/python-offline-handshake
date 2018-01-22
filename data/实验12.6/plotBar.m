@@ -5,7 +5,7 @@ function plotBar(masterfile,slavefile,lab,varargin)
 %varargin legend example:   'Cartesian','Spherical'
     M=csvread(masterfile);
     S=csvread(slavefile);
-    tm=M(40:end,:);
+    tm=M(40:end,:);         %调整随机动作和规则动作的顺序
     ts=S(40:end,:);
     fM=[tm ;M(26:39,:)];
     fS=[ts ;S(26:39,:)];

@@ -1,5 +1,15 @@
-from Utils import pearson_correlation,readAcc,getMagnitude,shift_central
+from Utils import pearson_correlation,readAcc,getMagnitude,shift_central,readAll
 from matplotlib import pyplot as plt
+import os
+import csv
+
+def output(data,file):
+    with open(file,'w',newline="") as f:
+        writer=csv.writer(f)
+        for line in data:
+            writer.writerow(line)
+
+
 def align(master,slave):
     le=len(master)
     l=int(len(master)*4/9)
@@ -14,6 +24,34 @@ def align(master,slave):
                 m_start=i
                 s_start=j
     return m_start,s_start
+
+def align_beginning(master,slave):
+    master_acc=readAll(master)
+    slave_acc=readAll(slave)
+    master_acc=shift_central(master_acc)
+    slave_acc=shift_central(slave_acc)
+    m_magnitude=[getMagnitude(master_acc[i][:3]) for i in range(len(master_acc))]
+    s_magnitude=[getMagnitude(slave_acc[i][:3]) for i in range(len(slave_acc))]
+    m_start,s_start=align(m_magnitude[:200],s_magnitude[:200])
+    l=min(len(m_magnitude)-m_start,len(s_magnitude)-s_start)
+    return master_acc[m_start:m_start+l],slave_acc[s_start:s_start+l]
+
+def batch_align(file="transform"):
+    filepath = os.getcwd() + "\\data\\"+file
+    files=os.listdir(filepath)
+    master="masterlocal"
+    slave="slavelocal"
+    outputpath=os.getcwd() + "\\data\\"+"aligned"
+    for i in range(26,45):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            print(mfile)
+            m,s=align_beginning(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
+            output_m=os.path.join(outputpath,mfile)
+            output_s=os.path.join(outputpath,sfile)
+            output(m,output_m)
+            output(s,output_s)
 
 
 def time_alignment(master,slave):
@@ -148,7 +186,8 @@ def test(master,slave,m,s):
 
 
 if __name__=="__main__":
-    num=str(14)
+    '''num=str(14)
     m=readAcc(".\\data\\RMSD\\masterlocal-"+num+".csv")
     s=readAcc(".\\data\\RMSD\\slavelocal-"+num+".csv")
-    test(".\\data\\transform\\masterlocal-"+num+".csv",".\\data\\transform\\slavelocal-"+num+".csv",m,s)
+    test(".\\data\\transform\\masterlocal-"+num+".csv",".\\data\\transform\\slavelocal-"+num+".csv",m,s)'''
+    batch_align()

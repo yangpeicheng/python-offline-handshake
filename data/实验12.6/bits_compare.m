@@ -1,0 +1,1 @@
+plotBarBits('.\AdaptiveAcc\levelcrossing.csv','.\AdaptiveAccSph\levelcrossing.csv',[{'len(bits)'};{'len(bits)/len(data)'};{'error/len(bits)'}],'Cartesian','Spherical')

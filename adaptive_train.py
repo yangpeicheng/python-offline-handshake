@@ -125,13 +125,13 @@ def test(masterfile,slavefile):
     tm,ts=adaptive_train(m_a,s_a)
     output(masterfile,tm,"AdaptiveAcc")
     output(slavefile,ts,"AdaptiveAcc")
-    output(masterfile,Cartesian2Spherical(tm),"AdaptiveAccSph")
-    output(slavefile,Cartesian2Spherical(ts),"AdaptiveAccSph")
+    #output(masterfile,Cartesian2Spherical(tm),"AdaptiveAccSph")
+    #output(slavefile,Cartesian2Spherical(ts),"AdaptiveAccSph")
     tmg,tsg=adaptive_train(m_g,s_g)
     output(masterfile,tmg,"AdaptiveGyro")
     output(slavefile,tsg,"AdaptiveGyro")
-    output(masterfile,Cartesian2Spherical(tmg),"AdaptiveGyroSph")
-    output(slavefile,Cartesian2Spherical(tsg),"AdaptiveGyroSph")
+    #output(masterfile,Cartesian2Spherical(tmg),"AdaptiveGyroSph")
+    #output(slavefile,Cartesian2Spherical(tsg),"AdaptiveGyroSph")
     return tm,ts
 
 def output(file,data,f):
@@ -170,13 +170,33 @@ def batchGraph(file):
             print(mfile)
             graphFromFile(os.path.join(filepath,mfile),os.path.join(filepath,sfile))
 
+def transform2sph(file):
+    filepath = os.getcwd() + "\\data\\"+file
+    files=os.listdir(filepath)
+    master="masterlocal"
+    slave="slavelocal"
+    for i in range(1,45):
+        mfile=master+"-"+str(i)+".csv"
+        sfile=slave+"-"+str(i)+".csv"
+        if mfile in files and sfile in files:
+            print(mfile)
+            mfile=os.path.join(filepath,mfile)
+            sfile=os.path.join(filepath,sfile)
+            data = readAcc(mfile)
+            output(mfile, Cartesian2Spherical(data), "leastsquareSph")
+            data = readAcc(sfile)
+            output(sfile, Cartesian2Spherical(data), "leastsquareSph")
+
+
 if __name__=="__main__":
     '''m,s=test(".\\data\\transform\\masterlocal-29.csv",".\\data\\transform\\slavelocal-29.csv")
     compareGraph(m,s)
     graphFromFile(".\\data\\RMSD\\masterlocal-29.csv",".\\data\\RMSD\\slavelocal-29.csv")'''
     #test(".\\data\\transform\\masterlocal-33.csv",".\\data\\transform\\slavelocal-33.csv")
-    main_test()
-    batchGraph("AdaptiveAccSph")
+    #main_test()
+    #batchGraph("AdaptiveAccSph")
     #batchGraph("AdaptiveAcc")
-    batchGraph("AdaptiveGyroSph")
+    #batchGraph("AdaptiveGyroSph")
     #batchGraph("AdaptiveGyro")
+    #batchGraph("leastsquare")
+    batchGraph("leastsquare")

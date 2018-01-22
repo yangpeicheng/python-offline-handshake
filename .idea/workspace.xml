@@ -2,306 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e8b452-57df-448b-b1a8-fdf067793814" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/AccSpherical/bits.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/GyroSpherical/levelcrossing.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RMSD/levelcrossing.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/gyro/levelcrossing.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/1.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/10.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/11.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/12.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/13.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/14.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/15.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/16.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/17.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/18.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/19.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/2.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/20.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/21.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/21.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/22.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/22.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/23.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/24.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/24.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/25.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/26.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/27.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/28.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/29.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/3.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/30.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/31.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/32.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/33.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/34.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/34.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/35.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/36.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/37.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/37.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/38.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/39.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/39.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/4.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/40.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/40.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/41.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/41.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/42.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/42.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/43.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/43.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/44.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/44.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/5.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/6.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/7.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/8.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/9.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/picture/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/1.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/10.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/11.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/12.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/13.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/14.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/15.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/16.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/17.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/18.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/19.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/2.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/20.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/21.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/21.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/22.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/22.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/23.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/24.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/24.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/25.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/26.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/27.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/28.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/29.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/3.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/30.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/31.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/32.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/33.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/34.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/34.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/35.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/36.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/37.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/37.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/38.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/39.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/39.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/4.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/40.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/40.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/41.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/41.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/42.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/42.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/43.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/43.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/44.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/44.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/5.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/6.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/7.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/8.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/9.jpg" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/picture/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/acc_bits_smooth.jpg" afterPath="$PROJECT_DIR$/picture/acc_bits_smooth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/acc_cor.jpg" afterPath="$PROJECT_DIR$/picture/acc_cor.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/acc_cor_smooth.jpg" afterPath="$PROJECT_DIR$/picture/acc_cor_smooth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/acc_inner.jpg" afterPath="$PROJECT_DIR$/picture/acc_inner.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/acc_inner_smooth.jpg" afterPath="$PROJECT_DIR$/picture/acc_inner_smooth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/gyro_bits_smooth.jpg" afterPath="$PROJECT_DIR$/picture/gyro_bits_smooth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/gyro_cor.jpg" afterPath="$PROJECT_DIR$/picture/gyro_cor.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/gyro_cor_smooth.jpg" afterPath="$PROJECT_DIR$/picture/gyro_cor_smooth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/gyro_inner.jpg" afterPath="$PROJECT_DIR$/picture/gyro_inner.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/picture/gyro_inner_smooth.jpg" afterPath="$PROJECT_DIR$/picture/gyro_inner_smooth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/entropyEstimation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extractRandomness.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gravity_cos.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RMSD/result.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/RMSD/result2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/master/masterglobalLocal-45.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/实验12.6/plot3D.m" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/实验12.6/plotBar.m" afterPath="$PROJECT_DIR$/data/实验12.6/plotBar.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot3D.m" afterPath="$PROJECT_DIR$/plot3D.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMSD.py" afterPath="$PROJECT_DIR$/RMSD.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils.py" afterPath="$PROJECT_DIR$/Utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adaptive_train.py" afterPath="$PROJECT_DIR$/adaptive_train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare.py" afterPath="$PROJECT_DIR$/compare.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AccSpherical/inner.csv" afterPath="$PROJECT_DIR$/data/AccSpherical/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AccSpherical/result.csv" afterPath="$PROJECT_DIR$/data/AccSpherical/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAcc/inner.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAcc/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAcc/result.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAcc/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/inner.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/levelcrossing.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/levelcrossing.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-10.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-11.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-12.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-13.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-14.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-14.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-15.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-16.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-17.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-18.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-19.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-2.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-20.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-21.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-22.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-22.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-23.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-24.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-25.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-26.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-27.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-28.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-29.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-3.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-30.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-31.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-32.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-32.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-33.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-33.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-34.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-34.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-35.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-35.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-36.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-36.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-37.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-37.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-38.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-38.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-39.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-39.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-4.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-40.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-40.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-41.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-41.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-42.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-42.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-43.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-43.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-44.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-44.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-5.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-6.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-7.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-8.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-9.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/masterlocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/result.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-1.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-10.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-11.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-12.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-13.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-14.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-14.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-15.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-16.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-17.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-18.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-19.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-2.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-20.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-21.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-22.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-22.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-23.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-24.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-25.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-26.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-27.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-28.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-29.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-3.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-30.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-31.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-32.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-32.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-33.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-33.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-34.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-34.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-35.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-35.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-36.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-36.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-37.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-37.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-38.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-38.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-39.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-39.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-4.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-40.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-40.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-41.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-41.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-42.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-42.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-43.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-43.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-44.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-44.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-5.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-6.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-7.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-9.csv" afterPath="$PROJECT_DIR$/data/AdaptiveAccSph/slavelocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyro/inner.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyro/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyro/result.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyro/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/inner.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/levelcrossing.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/levelcrossing.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-10.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-11.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-12.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-13.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-14.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-14.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-15.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-16.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-17.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-18.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-19.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-2.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-20.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-21.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-22.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-22.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-23.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-24.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-25.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-26.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-27.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-28.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-29.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-3.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-30.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-31.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-32.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-32.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-33.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-33.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-34.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-34.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-35.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-35.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-36.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-36.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-37.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-37.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-38.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-38.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-39.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-39.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-4.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-40.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-40.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-41.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-41.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-42.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-42.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-43.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-43.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-44.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-44.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-5.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-6.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-7.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-8.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-9.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/masterlocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/result.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-1.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-10.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-10.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-11.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-11.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-12.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-12.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-13.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-13.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-14.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-14.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-15.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-15.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-16.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-16.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-17.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-17.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-18.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-18.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-19.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-19.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-2.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-20.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-20.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-21.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-21.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-22.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-22.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-23.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-23.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-24.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-24.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-25.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-25.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-26.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-26.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-27.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-27.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-28.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-28.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-29.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-29.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-3.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-3.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-30.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-30.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-31.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-31.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-32.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-32.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-33.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-33.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-34.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-34.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-35.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-35.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-36.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-36.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-37.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-37.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-38.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-38.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-39.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-39.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-4.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-4.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-40.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-40.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-41.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-41.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-42.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-42.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-43.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-43.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-44.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-44.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-5.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-5.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-6.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-6.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-7.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-7.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-8.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-9.csv" afterPath="$PROJECT_DIR$/data/AdaptiveGyroSph/slavelocal-9.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GyroSpherical/inner.csv" afterPath="$PROJECT_DIR$/data/GyroSpherical/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GyroSpherical/result.csv" afterPath="$PROJECT_DIR$/data/GyroSpherical/result.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RMSD/inner.csv" afterPath="$PROJECT_DIR$/data/RMSD/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RMSD/result.csv" afterPath="$PROJECT_DIR$/data/RMSD/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/gyro/inner.csv" afterPath="$PROJECT_DIR$/data/gyro/inner.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/gyro/result.csv" afterPath="$PROJECT_DIR$/data/gyro/result.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dataExplain.txt" afterPath="$PROJECT_DIR$/data/dataExplain.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-1.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-1.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-10.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-10.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/masterlocal-11.csv" afterPath="$PROJECT_DIR$/data/transform/masterlocal-11.csv" />
@@ -390,8 +105,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-7.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-7.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-8.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-8.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/transform/slavelocal-9.csv" afterPath="$PROJECT_DIR$/data/transform/slavelocal-9.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minError.m" afterPath="$PROJECT_DIR$/minError.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotBar.m" afterPath="$PROJECT_DIR$/plotBar.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quantization.py" afterPath="$PROJECT_DIR$/quantization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.m" afterPath="$PROJECT_DIR$/test.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time_alignment.py" afterPath="$PROJECT_DIR$/time_alignment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transform.py" afterPath="$PROJECT_DIR$/transform.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unitdisk.m" afterPath="$PROJECT_DIR$/unitdisk.m" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -402,23 +122,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="compare.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="compare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="653">
+              <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quantization.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quantization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quantization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="172" column="24" lean-forward="false" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
+            <state relative-caret-position="4094">
+              <caret line="182" column="36" lean-forward="false" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -427,22 +145,10 @@
       <file leaf-file-name="time_alignment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time_alignment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1288">
-              <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+            <state relative-caret-position="4278">
+              <caret line="189" column="55" lean-forward="false" selection-start-line="189" selection-start-column="55" selection-end-line="189" selection-end-column="55" />
               <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bitsCompare.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitsCompare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -451,8 +157,8 @@
       <file leaf-file-name="Utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="1633">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -461,8 +167,8 @@
       <file leaf-file-name="adaptive_train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adaptive_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="175" column="92" lean-forward="false" selection-start-line="175" selection-start-column="92" selection-end-line="175" selection-end-column="92" />
+            <state relative-caret-position="4508">
+              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding>
                 <element signature="e#0#87#0" expanded="true" />
               </folding>
@@ -473,8 +179,8 @@
       <file leaf-file-name="transform.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="897">
+              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -482,31 +188,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
+      <file leaf-file-name="step.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36754">
-              <caret line="1611" column="22" lean-forward="false" selection-start-line="1611" selection-start-column="22" selection-end-line="1611" selection-end-column="22" />
+            <state relative-caret-position="483">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/matplotlib/axes/_base.py">
+      <file leaf-file-name="slave.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slave.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7429">
-              <caret line="358" column="0" lean-forward="false" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMSD.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RMSD.py">
+      <file leaf-file-name="master.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/master.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="306" column="33" lean-forward="false" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="33" />
+            <state relative-caret-position="230">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gravity_cos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gravity_cos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -528,6 +244,7 @@
       <find>remove</find>
       <find>21</find>
       <find>21.csv</find>
+      <find>bic</find>
       <find>print</find>
     </findStrings>
     <dirStrings>
@@ -553,21 +270,24 @@
         <option value="$PROJECT_DIR$/pca.py" />
         <option value="$PROJECT_DIR$/slave.py" />
         <option value="$PROJECT_DIR$/master.py" />
-        <option value="$PROJECT_DIR$/Utils.py" />
         <option value="$PROJECT_DIR$/subData.py" />
         <option value="$PROJECT_DIR$/bitsCompare.py" />
+        <option value="$PROJECT_DIR$/RMSD.py" />
+        <option value="$PROJECT_DIR$/entropyEstimation.py" />
         <option value="$PROJECT_DIR$/time_alignment.py" />
+        <option value="$PROJECT_DIR$/compare.py" />
+        <option value="$PROJECT_DIR$/extractRandomness.py" />
+        <option value="$PROJECT_DIR$/transform.py" />
+        <option value="$PROJECT_DIR$/Utils.py" />
+        <option value="$PROJECT_DIR$/gravity_cos.py" />
         <option value="$PROJECT_DIR$/quantization.py" />
         <option value="$PROJECT_DIR$/adaptive_train.py" />
-        <option value="$PROJECT_DIR$/transform.py" />
-        <option value="$PROJECT_DIR$/RMSD.py" />
-        <option value="$PROJECT_DIR$/compare.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="294" />
-    <option name="y" value="24" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="362" />
+    <option name="y" value="80" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -589,7 +309,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assign2_code_v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sensorshoe" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -618,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.quantization">
+  <component name="RunManager" selected="Python.compare">
     <configuration name="adaptive_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -653,6 +373,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="master" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="adb" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/master.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="quantization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -670,7 +407,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="time_alignment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="slave" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -682,42 +419,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adb" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/time_alignment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="transform" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="adb" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transform.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/slave.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.adaptive_train" />
-      <item index="1" class="java.lang.String" itemvalue="Python.time_alignment" />
-      <item index="2" class="java.lang.String" itemvalue="Python.compare" />
-      <item index="3" class="java.lang.String" itemvalue="Python.quantization" />
-      <item index="4" class="java.lang.String" itemvalue="Python.transform" />
+      <item index="0" class="java.lang.String" itemvalue="Python.compare" />
+      <item index="1" class="java.lang.String" itemvalue="Python.adaptive_train" />
+      <item index="2" class="java.lang.String" itemvalue="Python.quantization" />
+      <item index="3" class="java.lang.String" itemvalue="Python.slave" />
+      <item index="4" class="java.lang.String" itemvalue="Python.master" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.quantization" />
-        <item index="1" class="java.lang.String" itemvalue="Python.compare" />
+        <item index="0" class="java.lang.String" itemvalue="Python.compare" />
+        <item index="1" class="java.lang.String" itemvalue="Python.quantization" />
         <item index="2" class="java.lang.String" itemvalue="Python.adaptive_train" />
-        <item index="3" class="java.lang.String" itemvalue="Python.transform" />
-        <item index="4" class="java.lang.String" itemvalue="Python.time_alignment" />
+        <item index="3" class="java.lang.String" itemvalue="Python.master" />
+        <item index="4" class="java.lang.String" itemvalue="Python.slave" />
       </list>
     </recent_temporary>
   </component>
@@ -735,7 +455,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="362" y="80" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -743,7 +463,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2835979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30146232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -787,23 +507,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/step2.py" />
-    <entry file="file://$PROJECT_DIR$/sum.bat" />
-    <entry file="file://$PROJECT_DIR$/step.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sum.bat" />
-    <entry file="file://$PROJECT_DIR$/step2.py" />
     <entry file="file://$PROJECT_DIR$/sum.py" />
     <entry file="file://$PROJECT_DIR$/lms.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -819,7 +522,6 @@
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/core/_methods.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/core/fromnumeric.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/fft/fftpack.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/matrixlib/defmatrix.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/157396099/math.py" />
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/matrixlib/defmatrix.py" />
@@ -855,24 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/numpy/lib/function_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="2560" column="0" lean-forward="false" selection-start-line="2560" selection-start-column="0" selection-end-line="2560" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -883,20 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71346">
@@ -904,46 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/matplotlib/axes/_axes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27623">
-          <caret line="1243" column="8" lean-forward="false" selection-start-line="1243" selection-start-column="8" selection-end-line="1243" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/matplotlib/axes/_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7429">
           <caret line="358" column="0" lean-forward="false" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitsCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/time_alignment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,24 +589,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36754">
           <caret line="1611" column="22" lean-forward="false" selection-start-line="1611" selection-start-column="22" selection-end-line="1611" selection-end-column="22" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/statsmodels/tsa/stattools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="1005" column="70" lean-forward="false" selection-start-line="1005" selection-start-column="70" selection-end-line="1005" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="3605" column="8" lean-forward="false" selection-start-line="3605" selection-start-column="8" selection-end-line="3605" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotBar.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entropyEstimation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="2037" column="0" lean-forward="false" selection-start-line="2037" selection-start-column="0" selection-end-line="2037" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractRandomness.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="125" column="24" lean-forward="false" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RMSD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="6877">
           <caret line="306" column="33" lean-forward="false" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitsCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gravity_cos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/time_alignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4278">
+          <caret line="189" column="55" lean-forward="false" selection-start-line="189" selection-start-column="55" selection-end-line="189" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/transform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="897">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -977,28 +719,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adaptive_train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="175" column="92" lean-forward="false" selection-start-line="175" selection-start-column="92" selection-end-line="175" selection-end-column="92" />
+        <state relative-caret-position="4508">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding>
             <element signature="e#0#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare.py">
+    <entry file="file://$PROJECT_DIR$/quantization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4094">
+          <caret line="182" column="36" lean-forward="false" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quantization.py">
+    <entry file="file://$PROJECT_DIR$/compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="172" column="24" lean-forward="false" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
+        <state relative-caret-position="653">
+          <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
           <folding />
         </state>
       </provider>

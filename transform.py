@@ -33,21 +33,23 @@ def handler(m):
                 lineacc=np.array([float(line[i]) for i in range(3,6)]).transpose()
                 g=[float(line[i]) for i in range(6,9)]
                 dt=(time-last_timestamp)*NS2S
-                '''if first:
+                if first:
                     norm_g=np.array(g)/np.linalg.norm(g)
                     fi=np.pi/2-math.atan2(math.sqrt(norm_g[0]*norm_g[0]+norm_g[1]*norm_g[1]),norm_g[2])
+                    print(fi/np.pi*180)
                     x=np.array([math.sin(fi),0,math.cos(fi)])
                     y=np.cross(norm_g,x)
                     current[0,:]=x
                     current[1,:]=y
                     current[2,:]=norm_g
-                else:'''
-                current=updateMatrix(current,gyro,dt)
-
+                    first=False
+                else:
+                    current=updateMatrix(current,gyro,dt)
                 acceleration.append(np.dot(current,lineacc).tolist())
                 matrix.append(current.tolist())
                 gyroscope.append(np.dot(current,gyro).tolist())
                 gravity.append(g)
+                #print(np.dot(current[2,:],g/np.linalg.norm(g)))
             last_timestamp=time
     s=m.split('\\')
     s[-2]="transform"

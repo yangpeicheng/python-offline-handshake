@@ -90,12 +90,7 @@ def compareData(mdata,sdata):
 
 
 def compareByLevelcrossing(mfile,sfile):
-    filepath = os.getcwd() + "\\data\\pca\\levelcrossing.csv"
-    sp=filepath.split("\\")
-    sp[-2]=mfile.split("\\")[-2]
-    filepath="\\".join(sp)
-    output=open(filepath,'a',newline="")
-    writer=csv.writer(output)
+
     macc=readAcc(mfile)
     sacc=readAcc(sfile)
     '''
@@ -113,7 +108,8 @@ def compareByLevelcrossing(mfile,sfile):
     output.writelines('len:' + str(len(m_key)) + '\r\n')
     output.writelines(str(m_key)+'\r\n')
     output.writelines(str(s_key)+'\r\n')'''
-    writer.writerow([len(m_key),len(m_key)/len(macc),error/len(m_key)])
+
+    return m_key,len(macc),error/len(m_key)
 
 
 def comparenormal(mfile,sfile):
@@ -146,14 +142,19 @@ def testlevelcrossing(file):
     #print(files)
     master="masterlocal"
     slave="slavelocal"
+
+    filepath = os.getcwd() + "\\data\\"+file
+    output=open(filepath+"\\levelcrossing.csv",'a',newline="")
+    writer=csv.writer(output)
+
     for i in range(1,45):
         mfile=master+"-"+str(i)+".csv"
         sfile=slave+"-"+str(i)+".csv"
         if mfile in files and sfile in files:
             mfilename=os.path.join(filepath,mfile)
             sfilename=os.path.join(filepath,sfile)
-            compareByLevelcrossing(mfilename,sfilename)
-
+            a,b,c=compareByLevelcrossing(mfilename,sfilename)
+            writer.writerow([len(a), b, c])
 
 
 def testnormal():
@@ -175,11 +176,12 @@ if __name__=="__main__":
     #testlevelcrossing("gyro")
     #testlevelcrossing("AccSpherical")
     #testlevelcrossing("GyroSpherical")
-    testlevelcrossing("AdaptiveAcc")
-    testlevelcrossing("AdaptiveAccSph")
-    testlevelcrossing("AdaptiveGyro")
-    testlevelcrossing("AdaptiveGyroSph")
-
+    #testlevelcrossing("AdaptiveAcc")
+    #testlevelcrossing("AdaptiveAccSph")
+    #testlevelcrossing("AdaptiveGyro")
+    #testlevelcrossing("AdaptiveGyroSph")
+    testlevelcrossing("leastsquare")
+    #testlevelcrossing("leastsquareSph")
 
 
 

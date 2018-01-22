@@ -1,7 +1,5 @@
-function plot3D( masterfile,slavefile )
+function plot3D( M,S )
 %三维数据对比折线图
-    M=csvread(masterfile);
-    S=csvread(slavefile);
     Mx=M(:,1);
     My=M(:,2);
     Mz=M(:,3);
@@ -13,7 +11,7 @@ function plot3D( masterfile,slavefile )
     t=1:row;
     
     figure(1);
-    figure('visible','off');
+    %figure('visible','off');
     
     subplot(3,1,1); hold on; set(gca, 'Fontname', 'Times New Roman','FontSize',fontsize)
     plot(t,Mx,'r');

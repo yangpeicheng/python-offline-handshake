@@ -1,0 +1,29 @@
+alignment_compare.m 
+时域对齐图  ppt-1 调用time_alignment_compare.m函数
+internal_correlation.m
+单个设备内部各轴相关性 ppt-5 调用plotBar.m函数
+external_correlation.m
+两个设备之间各轴相关性 ppt-6 调用plotBar.m函数
+bits_compare.m
+比特串对比 ppt-7 调用plotBarBits.m函数
+
+文件夹里为数据
+AdaptiveAcc，AdaptiveAccSph
+	inner.csv为内部各轴相关性的数据
+	result.csv为两设备之间的相关性
+	levelcrossing.csv为生成bit的数据
+
+AdaptiveAlign,BeginAlign
+	masterlocal-14.csv master加速度数据
+	slavelocal-14.csv slave加速度数据
+
+数据说明
+1-6 单人握手
+7-12 双人握手
+13-15 上下，左右，前后
+16-18 环
+19-21 旋转
+22-25 自旋+转动
+26-29 随机
+30-39 周期动作组合
+40-44 随机
